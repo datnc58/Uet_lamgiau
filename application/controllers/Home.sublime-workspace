@@ -1,0 +1,504 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"hi",
+				"hide"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"v",
+				"var_dump($aProducts);die"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"aL",
+				"$aListProducts〔variable〕"
+			],
+			[
+				"va",
+				"var_dump"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"Sublime Alignment",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/xampp/htdocs/demo_cokhi/assets/css/front_end/style.css",
+		"/D/xampp/htdocs/demo_cokhi/assets/css/detail_content.css",
+		"/E/xampp/htdocs/demo_thienlong/assets/css/front_end/setmedia.css",
+		"/E/xampp/htdocs/lblb/static/jscript/themeM58-theme/functions.js",
+		"/E/xampp/htdocs/demo_cokhi/assets/css/front_end/style.css",
+		"/E/xampp/htdocs/demo_sangogiamy/assets/css/front_end/style00.css",
+		"/E/xampp/htdocs/demo_smile/assets/css/front_end/style00.css",
+		"/E/xampp/htdocs/demo_thienlong/assets/css/front_end/detail_product.css",
+		"/E/xampp/htdocs/demo_thienlong/assets/css/front_end/style00.css",
+		"/E/xampp/htdocs/demo_quatangntv/assets/css/front_end/ocslideshow.css",
+		"/D/hoc tap/html/sản phẩm chay doc/maque/demo/styles/maquee.css",
+		"/E/xampp/htdocs/giamy/assets/css/front_end/style00.css",
+		"/E/xampp/htdocs/tokyo/assets/css/front_end/style.css",
+		"/E/xampp/htdocs/demo_sangogiamy/assets/css/front_end/ocslideshow.css",
+		"/E/xampp/htdocs/caodang/application/controllers/home.php",
+		"/E/xampp/htdocs/lblb/static/jscript/dongdo-theme/ckeditor.js",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/slq-php.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/service/store-data.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/service/store.class.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM68/category.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM68/header.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM68/left.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM68-theme/default/style/default/css/menu.css",
+		"/E/xampp/htdocs/lblb/theme/themeM68-theme/default/style/default/css/site_temp.css",
+		"/E/xampp/htdocs/lblb/theme/themeM68-theme/default/style/default/css/responsive.css",
+		"/E/xampp/htdocs/lblb/static/jscript/themeM67-theme/classie.js",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/cart.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM67-theme/default/style/default/css/responsive.css",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/checkout.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/checkout.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/search.class.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM68/cart.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/checkout.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/detail.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM68/right.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM68/detail.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/right.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM68/footer.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM68-theme/default/style/default/css/block-theme.css",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM68/doitac.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/homesales.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM69-theme/default/template/template.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM65-theme/default/style/default/css/style.css",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM62/search.class.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM62/search.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/header.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/home-profea.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/list-products-index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/category.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/search.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/news-detail.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/checkout.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/news-cat.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/detail.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM69/tag.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM69/list-products.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM69/list-products-index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM69/list-products-category.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM69/homesales.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM69/home-profea.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM69/footer.html.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/search.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/cart.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/news-detail.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/news-cat.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/category.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/checkout.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/detail.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/index.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM69/tag.class.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM68/index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/category.class.php",
+		"/E/xampp/htdocs/lblb/static/jscript/themeM68-theme/global.js",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM68/list-news.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM68/news-index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/news-cat.class.php",
+		"/E/xampp/htdocs/lblb/theme/themeM68-theme/default/style/default/css/product.css",
+		"/E/xampp/htdocs/lblb/theme/themeM67-theme/default/style/default/css/style.css",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/footer.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/category.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/news-cat.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/search.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/tag.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM67/news-detail.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/left.html.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/news-detail.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/news-cat.class.php",
+		"/E/xampp/htdocs/lblb/theme/themeM67-theme/default/style/default/css/ocslideshow.css",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/search.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/tag.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM66/tag.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM66/search.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/category.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/detail.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM67/cart.class.php",
+		"/E/xampp/htdocs/lblb/theme/themeM66-theme/default/style/default/css/global.css",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM66/news-detail.html.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/index.class.php",
+		"/E/xampp/htdocs/lblb/theme/themeM67-theme/default/style/default/css/tinos.css",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/tag.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/news-detail.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/detail.class.php",
+		"/E/xampp/htdocs/lblb/module/store/include/component/controller/themeM68/cart.class.php",
+		"/E/xampp/htdocs/lblb/static/jscript/themeM66-theme/global.js",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM65/index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM66/quangcao.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM66/category.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM66/index.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM66/left.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM66-theme/default/style/default/css/responsive.css",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM66/footer.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM66-theme/default/style/default/css/product.css",
+		"/E/xampp/htdocs/lblb/module/store/static/jscript/shopping-cart.js",
+		"/E/xampp/htdocs/lblb/module/store/static/jscript/checkout.js",
+		"/E/xampp/htdocs/lblb/module/store/static/jscript/function.js",
+		"/E/xampp/htdocs/lblb/static/jscript/themeM66-theme/option_selection.js",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM66/news-cat.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM66/cart.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM66/checkout.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM65/cart.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM66/sanpham.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM66-theme/default/style/default/css/styles.css",
+		"/E/xampp/htdocs/lblb/module/store/template/default/controller/themeM66/search.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM66/right.html.php",
+		"/E/xampp/htdocs/lblb/theme/themeM66-theme/default/template/template.html.php",
+		"/E/xampp/htdocs/lblb/module/store/template/default/block/themeM67/list-news.html.php"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"E:\\xampp\\htdocs\\lblb\\theme\\themeM64-theme\\default\\style,E:\\xampp\\htdocs\\lblb\\static\\jscript\\themeM65-theme",
+			"E:\\xampp\\htdocs\\lblb\\theme\\themeM64-theme\\default\\style",
+			"D:\\hoc tap\\My Web Sites\\mau my-haravan\\lux-residence.myharavan.com_M63\\hstatic.net,E:\\xampp\\htdocs\\lblb\\theme\\themeM62-theme\\default\\style\\default\\css,E:\\xampp\\htdocs\\lblb\\theme\\themeM63-theme,D:\\hoc tap\\My Web Sites\\mau my-haravan\\M66_stella-beauty.myharavan.com,E:\\xampp\\htdocs\\lblb\\theme\\themeM64-theme",
+			"D:\\hoc tap\\My Web Sites\\mau my-haravan\\lux-residence.myharavan.com_M63\\hstatic.net,E:\\xampp\\htdocs\\lblb\\theme\\themeM62-theme\\default\\style\\default\\css,E:\\xampp\\htdocs\\lblb\\theme\\themeM63-theme,D:\\hoc tap\\My Web Sites\\mau my-haravan\\M66_stella-beauty.myharavan.com",
+			"D:\\hoc tap\\My Web Sites\\mau my-haravan\\lux-residence.myharavan.com_M63\\hstatic.net,E:\\xampp\\htdocs\\lblb\\theme\\themeM62-theme\\default\\style\\default\\css,E:\\xampp\\htdocs\\lblb\\theme\\themeM63-theme",
+			"D:\\hoc tap\\My Web Sites\\mau my-haravan\\lux-residence.myharavan.com_M63\\hstatic.net,E:\\xampp\\htdocs\\lblb\\theme\\themeM62-theme\\default\\style\\default\\css",
+			"D:\\hoc tap\\My Web Sites\\mau my-haravan\\lux-residence.myharavan.com_M63\\hstatic.net"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";}",
+			"getProductByTagName",
+			"768",
+			"url",
+			"url(",
+			"{\n",
+			"getImageProduct",
+			"1024",
+			"ltabs-tab-arrow",
+			"\">{$",
+			"ajax",
+			"><",
+			"apache/tinos/",
+			"url(",
+			"responsiveAccordion",
+			"responsiveAccordion ",
+			"1024",
+			"addFilterEffect",
+			"contact-form",
+			"initQuickView ",
+			"product-item",
+			"product-lists-new",
+			"../../hstatic.net/",
+			"checkItemOwlShow ",
+			"countdown",
+			".min",
+			"count",
+			"countd",
+			"../../hstatic.net/",
+			"aNewsnew",
+			",\n",
+			"url(",
+			",\n",
+			"sCategoryNews",
+			"loadIcon",
+			"check_out_date",
+			"Disabled",
+			"Pick a date",
+			"aNewsFeatured",
+			"header",
+			"initSelectors",
+			"AjaxLoader.gif",
+			"nivoSlider",
+			"sliderlayer",
+			"<script",
+			"url(",
+			"e50c.",
+			"../hstatic.net/",
+			"quick-view-product",
+			"off-canvas-nav",
+			"<script",
+			"{literal}",
+			"<script",
+			"480",
+			"768",
+			"images",
+			"datepicker-example7-start",
+			"margin-bottom-10",
+			"touchstart",
+			"menufunctions",
+			"sub-menu",
+			"toggleClass",
+			"\t$(\"#",
+			"menu-wrapper",
+			"product_gallery",
+			"image-gallery",
+			"product_gallery",
+			"fac",
+			"ega-hotel.myharavan.com",
+			"ega-hotel.myharavan.com\n",
+			"});\n",
+			",\n",
+			"url",
+			",\n",
+			"animate",
+			"goToTopEl",
+			"gotoTop",
+			"        {",
+			"portfolio",
+			"UVF_Didot.ttf",
+			"widget-link-dark.png",
+			"url",
+			"image",
+			"url(\"",
+			"title.png",
+			"480px",
+			"fa-remove",
+			"fa fa-remove",
+			"preventDefault",
+			"stopPropagation",
+			"top-search-trigger",
+			"TẮT TÌM KIẾM",
+			"top-search-trigger",
+			"documentOnLoad",
+			"documentOnReady",
+			"top-search-trigger",
+			"top-search",
+			"$body",
+			"functions.js",
+			"}",
+			"6f9a.",
+			"../hstatic.net",
+			"//hstatic.net",
+			"location",
+			"script",
+			"literal",
+			"script",
+			"<div class=\"col-md-6 col-sm-6 col-xs-12\">\n\t\t\t\t\t\t\t<label for=\"contactFormEmail\">Email</label>\n\t\t\t\t\t\t\t<input required=\"\" type=\"email\" class=\"full\" name=\"email\" id=\"email\">\n\t\t\t\t\t\t</div>",
+			" $",
+			"url(",
+			"getAlbumPhotos",
+			"slideToggle",
+			"themes.gif ",
+			"url(",
+			"imiage",
+			"url(\"",
+			"c329.",
+			"../hstatic.net/",
+			"//hstatic.net/",
+			"                                        ",
+			"//hstatic.net/",
+			"script",
+			"<script>",
+			"boots",
+			"){\n",
+			"max-width",
+			"page_gioithieu",
+			"gioithieu"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"url(../image/",
+			"../fonts/",
+			"url(../image/",
+			"url(../image/\n",
+			"http://hstatic.net/\n",
+			"url(../image/\n",
+			".\n",
+			"http://hstatic.net/\n",
+			"});\n",
+			"url(\"../image/",
+			".",
+			"http://hstatic.net",
+			"url(../image/",
+			"image",
+			"url(\"../imiage/",
+			".",
+			"http://hstatic.net/",
+			"                                        ",
+			"//hstatic.net/",
+			"                                    ",
+			"url(\"../image/",
+			".",
+			"https://hstatic.net/",
+			"'../image/",
+			"../image/",
+			"url(../image/",
+			".",
+			"http://hstatic.net/",
+			"http:/hstatic.net/",
+			".",
+			"http://hstatic.net/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Chrome.sublime-build",
+	"project": "Home.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

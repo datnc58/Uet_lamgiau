@@ -1,0 +1,397 @@
+/* .form-signin { */
+    /* max-width: 330px; */
+    /* padding: 15px; */
+    /* margin: 0 auto; */
+/* } */
+/* .form-signin-heading{ */
+    /* color: white; */
+/* } */
+/* .checkbox label{ */
+    /* color: white; */
+/* } */
+/* .form-signin .form-signin-heading, */
+/* .form-signin .checkbox { */
+    /* margin-bottom: 10px; */
+/* } */
+/* .form-signin .checkbox { */
+    /* font-weight: normal; */
+/* } */
+/* .form-signin .form-control { */
+    /* position: relative; */
+    /* height: auto; */
+    /* -webkit-box-sizing: border-box; */
+    /* -moz-box-sizing: border-box; */
+    /* box-sizing: border-box; */
+    /* padding: 10px; */
+    /* font-size: 16px; */
+/* } */
+/* .form-signin .form-control:focus { */
+    /* z-index: 2; */
+/* } */
+/* .form-signin input[type="email"] { */
+    /* margin-bottom: -1px; */
+    /* border-bottom-right-radius: 0; */
+    /* border-bottom-left-radius: 0; */
+/* } */
+/* .form-signin input[type="password"] { */
+    /* margin-bottom: 10px; */
+    /* border-top-left-radius: 0; */
+    /* border-top-right-radius: 0; */
+/* } */
+
+/*==============================9h/17/2/2017==========================*/
+#loginModal .account_hd{
+    overflow: inherit !important;
+}
+#loginModal .account_hd{
+    margin: 0px 0px 0px 0px !important;
+}
+#loginModal .account_hd li{
+    padding: 7px 0px 5px 0px !important;
+    border-right: 0px;
+}
+#loginModal .account_hd li:hover{
+    background: #51a9dc;
+}
+#loginModal .account_hd li a:hover{
+    color: #fff;
+}
+#loginModal .account_hd li a{
+    border-right: 1px solid #fff;
+    padding: 0px 16px 0px 18px !important;
+}
+#loginModal .box_register_header{
+    position: relative;
+}
+#loginModal .box_login_header{
+    position: relative;
+}
+#loginModal .inner_dropdown_login{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    width: 270px;
+    background: #fff;
+    z-index: 999;
+    color: #555;
+}
+#loginModal .box_register_header:hover .inner_dropdown_login{
+    display: block;
+}
+#loginModal .box_login_header:hover .inner_dropdown_login{
+    display: block;
+}
+#loginModal .lbl-welcome {
+    color: #007cc3;
+    padding: 23px 0 11px 15px;
+    font-size: 12px;
+}
+#loginModal .wrap-action-user .btn-login {
+    margin-bottom: 14px;
+    font-family: "Open Sans Bold", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+    background: #ff6600;
+    border-radius: 2px;
+}
+#loginModal .wrap-action-user {
+    padding: 0 15px 26px 15px;    color: #007cc3;
+}
+#loginModal .wrap-action-user .btn-login:hover {
+    background: #F16300;
+}
+#loginModal .wrap-action-user .btn-reg:hover {
+    background: #3C5064;
+}
+#loginModal .wrap-action-user .btn-reg {
+    background: #2c3e50;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+#loginModal .list-social-login {
+    margin: 10px 0;
+}
+#loginModal .list-social-login .iFacebook {
+    margin-right: 10px;
+}
+#loginModal .iFacebook {
+    width: 113px;
+    height: 32px;
+    background-position: -358px -303px;
+    border: none;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    background: url("../css/img/facebook.png");
+    background-size: 100% 100%;
+}
+#loginModal .iGoogle {
+    width: 113px;
+    height: 32px;
+    background: url("../css/img/google.png");
+    background-size: 100% 100%;
+    border: none;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+}
+#loginModal .list-social-login>a.log_link{
+     border-right: 0 !important;
+     padding: 0px !important;
+    cursor: pointer;
+}
+#loginModal .box_login_header a{
+    cursor: pointer;
+}
+#loginModal .modal-dialog{
+    width: 340px;
+}
+#loginModal .modal-body{
+    padding: 25px 35px 20px 35px;
+}
+#loginModal .id_acc{
+    border-radius: 3px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+#loginModal .check_ghinho{
+    line-height: 23px;
+}
+#loginModal .quen_pass{
+    text-decoration: underline;
+    color: #a7bdd5;
+    line-height: 25px;
+    display: inline-block;
+    margin: 10px 0px;
+}
+#loginModal .login_zz{
+    width: 150px;
+    margin: auto;
+    margin-bottom: 14px;
+    font-family: "Open Sans Bold", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+    background: #ff6600;
+    border-radius: 2px;
+}
+#loginModal .register_zzz{
+    margin-bottom: 14px;
+    font-family: "Open Sans Bold", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+    background:#2c3e50;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+#loginModal .register_zzz:hover{
+    background:#3C5064;
+}
+#loginModal .login_ft{
+    border-top: 1px solid #dedede;
+    padding-top: 10px;
+}
+#loginModal .tit_login{
+    font-size: 14px;
+    font-weight: bold;
+}
+#loginModal #loginModal .modal-header{
+    padding: 5px 15px;
+}
+#loginModal .icon_acc_hd{
+    margin-right: 5px;
+}
+#loginModal .account_hd_fix>li {
+    float: left;
+    line-height: 16px;
+    border-left:0px !important;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#loginModal .account_hd_fix{
+    margin-top: 13px;
+}
+#loginModal .account_hd_fix>li:hover {
+    background: #5698dc;
+}
+#loginModal .account_hd_fix>li>a:hover {
+    color: #fff;
+}
+#loginModal .account_hd_fix>li>a{
+    padding-right: 16px;
+    padding-left: 18px;
+    border-left: 1px solid #fff;
+    display: inline-block;
+}
+#loginModal .box_register_header:hover{
+    cursor: pointer;
+}
+
+#loginModal #myModal .modal-dialog{
+    width: 795px;
+    max-width: 90%;
+}
+#loginModal .col-700{
+    width: 70%;
+}
+#loginModal .col-300{
+    width: 30%;
+}
+#loginModal .tit_regisrer{
+    line-height: 1.3;
+    color: #000;
+    font-size: 26px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+#loginModal .left_content_register .form-group {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+#loginModal .left_content_register .form-group label {
+    font-size: 13px;
+    color: #000;
+    line-height: 1;
+    font-weight: 500;
+}
+#loginModal .left_content_register .form-control {
+    height: 32px;
+    border-radius: 0;
+}
+#loginModal .form-control,#loginModal input[type="text"],#loginModal select,#loginModal textarea {
+    box-shadow: none;
+    border-color: #ccc;
+    background: #fff;
+    color: #6B7884;
+    height: 40px;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+#loginModal .left_content_register .captcha .captcha-code {
+    line-height: 32px;
+    height: 32px;
+    width: 124px;
+    padding-right: 8px;
+    float: left;
+}
+#loginModal .left_content_register .captcha .form-control {
+    width: 305px;
+    float: right;
+    height: 32px;
+    border-radius: 0;
+}
+#loginModal .left_content_register{
+    padding: 10px 60px;
+}
+#loginModal .list_regis_pop{
+    text-align: center;
+    margin: 15px 0px;
+    margin-bottom: 30px;
+}
+#loginModal .list_regis_pop a{
+    display: inline-block;
+    margin: 5px 10px;
+}
+#loginModal .tc_dk{
+    color: #003db6;
+    text-align: center;
+    line-height: 23px;
+    margin: 20px 0px;
+}
+#loginModal .butt_dk_z{
+    display: inline-block;
+    margin-bottom: 14px;
+    font-family: "Open Sans Bold", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    line-height: 24px;
+    cursor: pointer;
+    background: #dd1d1c;
+    border-radius: 2px;
+    width: 100%;
+    color: #fff;
+}
+#loginModal .butt_dk_z:hover{
+    background: #ef302f;
+    color: #fff;
+}
+#loginModal .right_content_register{
+    background: #b4b8b9;
+    overflow: hidden;
+    padding: 10px 14px;
+}
+#loginModal .tit_qltv{
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgba(255,255,255,.6);
+    padding-bottom: 10px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#loginModal .list-unstyled {
+    margin: 0px;
+}
+#loginModal .list-unstyled li {
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 14px;
+}
+#loginModal .list-unstyled li i.fa {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+#loginModal .txt_littk{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+#loginModal .close_regis{
+    width: 23px;
+    height: 23px;
+    border: 1px solid #fff !important;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+    background: #b4b8b9 !important;
+    border-radius: 50%;
+    right: -8px;
+    z-index: 9999;
+    top: -11px;
+    opacity: 1;
+    position: absolute;
+}
+#loginModal .right_content_register{
+    height: 574px;
+    max-height: 100%;
+}
+#loginModal .account_hd_fix li a{
+    cursor: pointer;
+}

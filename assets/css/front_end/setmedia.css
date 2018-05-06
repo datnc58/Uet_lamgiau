@@ -1,0 +1,159 @@
+
+
+@media (min-width:1200px) /* lg*/ {
+    .row_pc{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .container{
+        width: 1200px;
+    }
+    .col-lg-225{
+        width: 22.5%;
+    }
+    .col-lg-550{
+        width: 55%;
+    }
+    .col-lg-push-225{
+        left: 22.5%;
+    }
+    .col-lg-775{
+        width: 77.5%;
+    }
+    .col-lg-pull-775{
+        right: 77.5%;
+    }
+    .col-lg-280{
+        width: 28%; 
+    }
+    .col-lg-720{
+        width: 72%; 
+    }
+    .col-lg-700{
+        width: 70%; 
+    }
+    .col-lg-977 {
+
+        width: 77%;
+
+    }
+    .col-lg-323 {
+
+        width: 23%;
+
+    }
+    .col-lg-543{
+        width: 43.666667%;
+    }
+    .col-lg-431{
+        width: 31.333333%;
+    }
+    .col-lg-320{
+        width: 20%;
+    }
+    .col-lg-330 {
+        width: 30%;
+    }
+    .col-lg-980{
+        width: 80%;
+    }
+    .col-lg-436{
+        width: 36.333333%;
+    }
+    .col-lg-431 {
+        width: 31.333333%;
+    }
+    .col-lg-538 {
+        width: 38.666667%;
+    }
+    .col-lg-427 {
+        width: 27.333333%;
+    }
+    .col-lg-222 {
+        width: 22.666667%;
+    }
+    .col-lg-329 {
+
+        width: 29%;
+
+    }
+    .col-lg-130{
+        width: 12%;
+    }
+    .col-lg-620{
+        width: 63%;
+    }
+    .col-lg-642 {
+
+        width: 42%;
+
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) /* md*/{
+    .row_pc{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+     .col-md-329 {
+
+        width: 29%;
+
+    }
+
+    .col-md-642 {
+
+        width: 42%;
+
+    }
+     
+}
+
+@media (min-width:768px) and (max-width:991px) /* sm*/{
+     
+}
+
+@media (max-width:767px) /* xs*/{
+    .fixcontent img{
+        width: inherit;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .fixcontent table{
+        width: inherit;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .giohangfix{
+        width: 550px !important;
+    } 
+     .fixgiohang {
+            overflow: auto;
+        }
+}
+
+@media (max-width:480px) {
+	 
+    .col-480-12{
+        width: 100% !important;
+    }
+    .col-480-6{
+        width: 50% !important;
+    }
+    .hidden-480{
+        display: none !important;
+    }
+    .fixgiohang {
+            overflow: auto;
+        }
+    .visible-480{
+        display: block !important;
+    }
+     
+
+}
+
+
+.visible-480{
+    display: none;
+}
