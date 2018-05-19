@@ -23,6 +23,15 @@ class F_websitemodel extends MY_Model{
         return $q->first_row();
     }
 
+    public function getTypeWebsiteById_MID($idWebsite, $table){
+        $this->db->select('uet_content_mid.name');
+        $this->db->from('uet_content_mid');
+        $this->db->join($table, "uet_content_mid.id = $table.id_mid");
+        $this->db->where('uet_content_mid.id', $idWebsite);
+        $q= $this->db->get();
+        return $q->first_row();
+    }
+
     public function getDataById($table, $id){
        $q = $this->db->where('id',$id)->from($table)->count_all_results();
        return $q;
@@ -50,23 +59,7 @@ class F_websitemodel extends MY_Model{
             ->get('');
       return $query->result();
     }
-    public function getListHeader(){
-        $query = $this->db->select('uet_header.id,
-                                    uet_header.name,
-                                    uet_header.url,
-                                    uet_header.number,
-                                    uet_header.status,
-                                    uet_website.name as web_name,
-                                    uet_website.code,
-                                    ')
-            ->from('uet_header')
-            ->join('uet_website', 'uet_header.id_website = uet_website.id')
-            ->where('uet_header.status', 1)
-            ->order_by('uet_header.id','desc')
-            ->group_by('uet_header.id')
-            ->get('');
-        return $query->result();
-    }
+
 
     public function getListFooter(){
         $query = $this->db->select('uet_footer.id,

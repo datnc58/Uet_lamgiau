@@ -228,7 +228,542 @@ class Uet_content_leftright extends MY_Controller
         }
     }
 
+    //danh mục tin tức
+    function Danhmuc_tintuc(){
+        $data = array();
+        $seo = array();
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_left_catenews');
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/danhmuc_tintuc/index', $data);
+        $this->LoadFooterWebsite();
+    }
 
+    function Add_danhmuc_tintuc(){
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_left');
+        $seo = array();
+        $number = $this->f_websitemodel->select_maxlibrary('uet_left_catenews') ;
+        $library = $number->number + 1;
+        $pathImage = "library/content/left/danhmuc_tintuc/$library/";
+        //kiểm tra thư mục có tồn tại chưa
+        if(is_dir($pathImage)){
+            //thư mục đã tồn tại
+        }else{
+            //thư mục chưa tồn tại
+            mkdir($pathImage);
+        }
+        if(isset($_POST['hoanthanh'])){
+            if($_POST['id_left']){
+                $count = count($_POST['id_left']);
+                foreach($_POST['id_left'] as $val){
+                    $insert = array(
+                        'name' => $_POST['name'],
+                        'infor' => $_POST['infor'],
+                        'status' => 1,
+                        'id_left' => $val,
+                        'number' => $library,
+                        'url' => $pathImage,
+                    );
+                    $this->f_websitemodel->Add('uet_left_catenews', $insert);
+                }
+                //thực hiện import file
+                $this->load->library('upload');
+                $config['upload_path'] = $pathImage.'/';
+                $config['allowed_types'] = 'php|jpg|png|css';
+                $config['max_size'] = '*';
+                $config['max_width'] = '5000';
+                $config['max_height'] = '5000';
+                $this->upload->initialize($config);
+                //tải file php
+                if ( ! $this->upload->do_upload('php')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'uet.php');
+                }
+                //tải file css
+                if ( ! $this->upload->do_upload('style')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'style.css');
+                }
+                //tải file image
+                if ( ! $this->upload->do_upload('image')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
+                }
+            }
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_sanpham'));
+        }
 
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/danhmuc_tintuc/Add', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    public function editDanhmucTintuc($id=null){
+        $data = array();
+        $seo = array();
+        $checkRecode = $this->f_websitemodel->getDataById("uet_left_catenews",$id);
+        if($checkRecode == 0){
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_tintuc'));
+        }
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->getItemByID('uet_left_catenews',$id);
+        if(isset($_POST['submit'])) {
+            $idWeb = $_POST['idWeb'];
+            $url = $data['website']->url;
+            if(is_dir($url)){
+                // upload php
+                if (!empty($_FILES['php'])) {
+                    if (file_exists('uet.php'))
+                    {
+                        unlink('uet.php');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('php')) {
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'uet.php');
+                    }
+                }
+
+                // upload css
+                if (!empty($_FILES['style'])) {
+                    if (file_exists('style.css'))
+                    {
+                        unlink('style.css');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('style')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'style.css');
+                    }
+                }
+                // upload image
+                if (!empty($_FILES['image'])) {
+                    if (file_exists('image.png'))
+                    {
+                        unlink('image.png');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('image')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
+                    }
+                }
+            }
+            $update = array(
+                'name' => $_POST['name'],
+                'infor' => $_POST['infor'],
+
+            );
+            $this->f_websitemodel->Update('uet_left_catenews',$id,$update);
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_tintuc'));
+        }
+
+        $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['danhmuc_sanpham']->id_left, 'uet_left_catenews');
+        $this->LoadHeaderWebsite($data, $seo, true);
+        $this->load->view('website/content/left_right/danhmuc_tintuc/edit', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    public function DeleteDanhmucTintuc($id=null){
+        $deletaData = $this->f_websitemodel->Delete_where('uet_left_catenews',"id =$id ");
+        if(count($deletaData)>0){
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_tintuc'));
+        }
+    }
+
+    //danh mục hình ảnh
+    function Danhmuc_hinhanh(){
+        $data = array();
+        $seo = array();
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_left_catenews');
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/danhmuc_hinhanh/index', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    function Add_danhmuc_hinhanh(){
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_left');
+        $seo = array();
+        $number = $this->f_websitemodel->select_maxlibrary('uet_left_media') ;
+        $library = $number->number + 1;
+        $pathImage = "library/content/left/danhmuc_hinhanh/$library/";
+        //kiểm tra thư mục có tồn tại chưa
+        if(is_dir($pathImage)){
+            //thư mục đã tồn tại
+        }else{
+            //thư mục chưa tồn tại
+            mkdir($pathImage);
+        }
+        if(isset($_POST['hoanthanh'])){
+            if($_POST['id_left']){
+                $count = count($_POST['id_left']);
+                foreach($_POST['id_left'] as $val){
+                    $insert = array(
+                        'name' => $_POST['name'],
+                        'infor' => $_POST['infor'],
+                        'status' => 1,
+                        'id_left' => $val,
+                        'number' => $library,
+                        'url' => $pathImage,
+                    );
+                    $this->f_websitemodel->Add('uet_left_media', $insert);
+                }
+                //thực hiện import file
+                $this->load->library('upload');
+                $config['upload_path'] = $pathImage.'/';
+                $config['allowed_types'] = 'php|jpg|png|css';
+                $config['max_size'] = '*';
+                $config['max_width'] = '5000';
+                $config['max_height'] = '5000';
+                $this->upload->initialize($config);
+                //tải file php
+                if ( ! $this->upload->do_upload('php')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'uet.php');
+                }
+                //tải file css
+                if ( ! $this->upload->do_upload('style')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'style.css');
+                }
+                //tải file image
+                if ( ! $this->upload->do_upload('image')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
+                }
+            }
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_hinhanh'));
+        }
+
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/danhmuc_hinhanh/Add', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    public function editDanhmucHinhanh($id=null){
+        $data = array();
+        $seo = array();
+        $checkRecode = $this->f_websitemodel->getDataById("uet_left_media",$id);
+        if($checkRecode == 0){
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_hinhanh'));
+        }
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->getItemByID('uet_left_media',$id);
+        if(isset($_POST['submit'])) {
+            $idWeb = $_POST['idWeb'];
+            $url = $data['website']->url;
+            if(is_dir($url)){
+                // upload php
+                if (!empty($_FILES['php'])) {
+                    if (file_exists('uet.php'))
+                    {
+                        unlink('uet.php');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('php')) {
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'uet.php');
+                    }
+                }
+
+                // upload css
+                if (!empty($_FILES['style'])) {
+                    if (file_exists('style.css'))
+                    {
+                        unlink('style.css');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('style')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'style.css');
+                    }
+                }
+                // upload image
+                if (!empty($_FILES['image'])) {
+                    if (file_exists('image.png'))
+                    {
+                        unlink('image.png');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('image')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
+                    }
+                }
+            }
+            $update = array(
+                'name' => $_POST['name'],
+                'infor' => $_POST['infor'],
+
+            );
+            $this->f_websitemodel->Update('uet_left_media',$id,$update);
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_hinhanh'));
+        }
+
+        $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['danhmuc_sanpham']->id_left, 'uet_left_catenews');
+        $this->LoadHeaderWebsite($data, $seo, true);
+        $this->load->view('website/content/left_right/danhmuc_tintuc/edit', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    public function DeleteDanhmucHinhanh($id=null){
+        $deletaData = $this->f_websitemodel->Delete_where('uet_left_media',"id =$id ");
+        if(count($deletaData)>0){
+            redirect(base_url('website/Uet_content_leftright/Danhmuc_hinhanh'));
+        }
+    }
+
+    //banner quảng cáo
+
+    function Banner_quangcao(){
+        $data = array();
+        $seo = array();
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_left_advertise');
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/banner_quangcao/index', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    function Add_banner_quangcao(){
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_left');
+        $seo = array();
+        $number = $this->f_websitemodel->select_maxlibrary('uet_left_advertise') ;
+        $library = $number->number + 1;
+        $pathImage = "library/content/left/banner_quangcao/$library/";
+        //kiểm tra thư mục có tồn tại chưa
+        if(is_dir($pathImage)){
+            //thư mục đã tồn tại
+        }else{
+            //thư mục chưa tồn tại
+            mkdir($pathImage);
+        }
+        if(isset($_POST['hoanthanh'])){
+            if($_POST['id_left']){
+                $count = count($_POST['id_left']);
+                foreach($_POST['id_left'] as $val){
+                    $insert = array(
+                        'name' => $_POST['name'],
+                        'infor' => $_POST['infor'],
+                        'status' => 1,
+                        'id_left' => $val,
+                        'number' => $library,
+                        'url' => $pathImage,
+                    );
+                    $this->f_websitemodel->Add('uet_left_advertise', $insert);
+                }
+                //thực hiện import file
+                $this->load->library('upload');
+                $config['upload_path'] = $pathImage.'/';
+                $config['allowed_types'] = 'php|jpg|png|css';
+                $config['max_size'] = '*';
+                $config['max_width'] = '5000';
+                $config['max_height'] = '5000';
+                $this->upload->initialize($config);
+                //tải file php
+                if ( ! $this->upload->do_upload('php')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'uet.php');
+                }
+                //tải file css
+                if ( ! $this->upload->do_upload('style')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'style.css');
+                }
+                //tải file image
+                if ( ! $this->upload->do_upload('image')) {
+                    $error = array('error' => $this->upload->display_errors());
+                }
+                else {
+                    $datafile = array('upload_data' => $this->upload->data());
+                    rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
+                }
+            }
+            redirect(base_url('website/Uet_content_leftright/Banner_quangcao'));
+        }
+
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/banner_quangcao/Add', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    public function editBannerQuangcao($id=null){
+        $data = array();
+        $seo = array();
+        $checkRecode = $this->f_websitemodel->getDataById("uet_left_advertise",$id);
+        if($checkRecode == 0){
+            redirect(base_url('website/Uet_content_leftright/Banner_quangcao'));
+        }
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->getItemByID('uet_left_advertise',$id);
+        if(isset($_POST['submit'])) {
+            $idWeb = $_POST['idWeb'];
+            $url = $data['website']->url;
+            if(is_dir($url)){
+                // upload php
+                if (!empty($_FILES['php'])) {
+                    if (file_exists('uet.php'))
+                    {
+                        unlink('uet.php');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('php')) {
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'uet.php');
+                    }
+                }
+
+                // upload css
+                if (!empty($_FILES['style'])) {
+                    if (file_exists('style.css'))
+                    {
+                        unlink('style.css');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('style')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'style.css');
+                    }
+                }
+                // upload image
+                if (!empty($_FILES['image'])) {
+                    if (file_exists('image.png'))
+                    {
+                        unlink('image.png');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('image')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
+                    }
+                }
+            }
+            $update = array(
+                'name' => $_POST['name'],
+                'infor' => $_POST['infor'],
+
+            );
+            $this->f_websitemodel->Update('uet_left_advertise',$id,$update);
+            redirect(base_url('website/Uet_content_leftright/Banner_quangcao'));
+        }
+
+        $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['danhmuc_sanpham']->id_left, 'uet_left_advertise');
+        $this->LoadHeaderWebsite($data, $seo, true);
+        $this->load->view('website/content/left_right/banner_quangcao/edit', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    public function DeleteBannerQuangcao($id=null){
+        $deletaData = $this->f_websitemodel->Delete_where('uet_left_advertise',"id =$id ");
+        if(count($deletaData)>0){
+            redirect(base_url('website/Uet_content_leftright/Banner_quangcao'));
+        }
+    }
 
 }
