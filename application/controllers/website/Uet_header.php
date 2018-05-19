@@ -7,6 +7,7 @@ class Uet_header extends MY_Controller
     {
         parent::__construct();
         $this->load->model('website/f_headermodel');
+        $this->load->model('website/f_websitemodel');
     }
 
     //index
@@ -101,6 +102,10 @@ class Uet_header extends MY_Controller
     public function editHeader($id=null){
         $data = array();
         $seo = array();
+        $checkRecode = $this->f_websitemodel->getDataById($id);
+        if($checkRecode == 0){
+            redirect(base_url('website/Uet_header'));
+        }
         $data['website'] = $this->f_websitemodel->getItemByID('uet_header',$id);
         if(isset($_POST['submit'])) {
             $idWeb = $_POST['idWeb'];
@@ -186,6 +191,12 @@ class Uet_header extends MY_Controller
         $this->LoadHeaderWebsite($data, $seo, true);
         $this->load->view('website/header/editHeader', $data);
         $this->LoadFooterWebsite();
+    }
+    public function deleteHeader($id=null){
+        $deletaData = $this->f_websitemodel->Delete_where('uet_header',"id =$id ");
+        if(count($deletaData)>0){
+            redirect(base_url('website/Uet_header'));
+        }
     }
 	
 }
