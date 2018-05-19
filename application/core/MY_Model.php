@@ -141,7 +141,7 @@ class MY_Model extends CI_Model
         $homnay = strtotime($time);
         $homqua = strtotime( date('Y-m-d',strtotime('-1 day')));
         $tuantruoc = strtotime( date('Y-m-d',strtotime('-7 day')));
-       
+
         $query = $this->db->query('SELECT SUM(today) as today
             FROM thong_ke_online
             WHERE access_date >='.$tuantruoc.'
@@ -156,10 +156,10 @@ class MY_Model extends CI_Model
         $time = date('Y-m-d');
         $homnay = strtotime($time);
         $homqua = strtotime( date('Y-m-d',strtotime('-1 day')));
-      
+
         $query = $this->db->query('SELECT SUM(today) as today
             FROM thong_ke_online
-            WHERE access_date <= '.$homnay.'');  
+            WHERE access_date <= '.$homnay.'');
         $row = $query->first_row();
         return $row;
     }
@@ -263,7 +263,7 @@ class MY_Model extends CI_Model
         if(is_array($where)&&!empty($where)){
             $this->db->where($where);
         }
-		
+
         if(!empty($order)&&is_array($order)){
             foreach ($order as $field => $val){
                $this->db->order_by($field,$val);
@@ -315,14 +315,14 @@ class MY_Model extends CI_Model
 //        return $this->db->last_query();
 
         }
-	
+
     // public function getBanner($type){
         // $this->db->select('*');
         // $this->db->where('type',$type);
         // $q = $this->db->get('images');
         // return $q->result();
     // }
-	
+
 	// dem so ban ghi trong 1 bang
     public function Count($table, $where = array())
     {
@@ -385,9 +385,10 @@ class MY_Model extends CI_Model
     {
         return $this->db->count_all($table);
     }
-	
+
     public function getItemByID($table, $id)
     {
+
         $this->db->where('id', $id);
         $q = $this->db->get($table);
         return $q->first_row();
@@ -400,7 +401,7 @@ class MY_Model extends CI_Model
         return $q->first_row();
     }
 
-   
+
 	// thêm ban ghi trong table
     public function Add($table, $data)
     {
@@ -439,6 +440,7 @@ class MY_Model extends CI_Model
         if ($table&&$where) {
             $this->db->where($where);
             $this->db->delete($table);
+            return true;
         } else return false;
     }
 }

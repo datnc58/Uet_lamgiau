@@ -13,6 +13,10 @@ class F_websitemodel extends MY_Model{
         $q= $this->db->get();
         return $q->first_row();
     }
+    public function getDataById($id){
+       $q = $this->db->where(['id'=>$id])->from("uet_header")->count_all_results();
+       return $q;
+    }
 
     function select_maxlibrary($table){
         $this->db->select_max("number");
