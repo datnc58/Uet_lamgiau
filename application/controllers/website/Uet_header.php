@@ -16,6 +16,7 @@ class Uet_header extends MY_Controller
     {
         $data = array();
         $seo = array();
+        $data['headers'] = $this->f_websitemodel->getListHeader();
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/header/index', $data);
         $this->LoadFooterWebsite();
