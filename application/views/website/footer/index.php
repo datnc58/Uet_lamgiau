@@ -6,7 +6,7 @@
 <section class="content" style="text-align: center">
     <section class="content" style="text-align: center; background: #ffffff;">
         <div style="pull-left">
-            <a href="<?=base_url('website/Uet_header/Add_footer');?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm footer</a>
+            <a href="<?=base_url('website/Uet_footer/Add_footer');?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm footer</a>
         </div>
         <div class="clearfix"></div>
 
