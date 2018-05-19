@@ -36,12 +36,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($headers as $header) {
+                        <?php if(isset($headers)) { foreach ($headers as $header) {
                             $i = 0;
                             if ($header->code === 'basic_website') { $i++; ?>
                                 <tr>
-                                    <td><input type="checkbox" name=""></td>
-                                    <td><?= $i; ?></td>
+                                     <td><?= $i; ?></td>
                                     <td><img height="100px" src="<?= base_url($header->url). '/image.png'?>"></td>
                                     <td><?= $header->name?></td>
                                     <td><?= $header->url?></td>
@@ -49,7 +48,7 @@
                                     <td><a href=""></a></td>
                                 </tr>
                             <?php }
-                        }?>
+                        }  }?>
                         
                     </tbody>
                     
@@ -68,7 +67,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($headers as $header) {
+                        <?php if(isset($headers)) { foreach ($headers as $header) {
                             $i = 0;
                             if ($header->code === 'advance_website') { $i++; ?>
                                 <tr>
@@ -80,7 +79,7 @@
                                     <td><a href="#"></a></td>
                                 </tr>
                             <?php }
-                        }?>
+                        } }?>
                         
                     </tbody>
                   </table>
