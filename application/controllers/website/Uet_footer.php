@@ -14,7 +14,7 @@ class Uet_footer extends MY_Controller
     {
         $data = array();
         $seo = array();
-
+        //$data['footers'] = $this->f_websitemodel->getListFooter();
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/footer/index', $data);
         $this->LoadFooterWebsite();

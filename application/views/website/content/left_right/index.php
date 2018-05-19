@@ -8,7 +8,7 @@
     <section class="content" style="text-align: center; background: #ffffff; display: inline-block; width: 100%">
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Product_category')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_sanpham')?>">
                     <div class="box">
                         <h4>Danh mục sản phẩm</h4>
                     </div>
