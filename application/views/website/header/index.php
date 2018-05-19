@@ -36,7 +36,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($headers as $header) {
+                        <?php if(isset($headers)){ foreach ($headers as $header) {
                             $i = 0;
                             if ($header->code === 'basic_website') { $i++; ?>
                                 <tr>
@@ -48,7 +48,7 @@
                                     <td><?= $header->number ?></td>
                                     <td><a href=""></a></td>
                                 </tr>
-                            <?php }
+                            <?php } }
                         }?>
                         
                     </tbody>
@@ -68,7 +68,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($headers as $header) {
+                        <?php if(isset($headers)){ foreach ($headers as $header) {
                             $i = 0;
                             if ($header->code === 'advance_website') { $i++; ?>
                                 <tr>
@@ -79,7 +79,7 @@
                                     <td><?= $header->number?></td>
                                     <td><a href="#"></a></td>
                                 </tr>
-                            <?php }
+                            <?php } }
                         }?>
                         
                     </tbody>
