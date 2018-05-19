@@ -23,7 +23,7 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="basic_website" >
-                <table id="example1" class="table table-striped table-bordered" style="width:100%">
+                <table id="hearder1" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
                             <th></th>
@@ -40,7 +40,8 @@
                             $i = 0;
                             if ($header->code === 'basic_website') { $i++; ?>
                                 <tr>
-                                     <td><?= $i; ?></td>
+                                    <td></td>
+                                    <td><?= $i; ?></td>
                                     <td><img height="100px" src="<?= base_url($header->url). '/image.png'?>"></td>
                                     <td><?= $header->name?></td>
                                     <td><?= $header->url?></td>
@@ -56,7 +57,7 @@
                 </table>
             </div>
             <div role="tabpanel" class="tab-pane" id="advance_website">
-                <table id="example2" class="table table-striped table-bordered">
+                <table id="hearder2" class="table table-striped table-bordered">
                     <thead>
                         <tr>
                             <th></th>
@@ -68,10 +69,9 @@
                         </tr>
                     </thead>
                     <tbody>
-
-
-                        <?php if(isset($headers)){ foreach ($headers as $header) {
-                            $i = 0;
+                        <?php if(isset($headers)){ 
+                            foreach ($headers as $header) {
+                            $i = 1;
                             if ($header->code === 'advance_website') { $i++; ?>
                                 <tr>
                                     <td><input type="checkbox" name=""></td>
@@ -96,7 +96,7 @@
 <!--<script type= 'text/javascript' src="--><?php //echo base_url(); ?><!--assets/js/thongketruycap/jquery.tsv-0.96.min.js"></script>-->
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#example1').DataTable();
-        $('#example2').DataTable();
+        $('#hearder1').DataTable();
+        $('#hearder2').DataTable();
     } );
 </script>
