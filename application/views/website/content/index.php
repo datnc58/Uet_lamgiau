@@ -54,7 +54,7 @@
                         foreach($loai_mid as $mid){
                             if($mid->id_content == $content->id ){ ?>
                                 <div class="col-md-8">
-                                    <a href="<?=base_url('website/Uet_content_mid')?>">
+                                    <a href="<?=base_url('website/Uet_content_mid/index2')."/$mid->id"?>">
                                         <div class="mid">
                                             <h4>Cấu hình khối giữa <BR>
                                                 CONTENT</h4>

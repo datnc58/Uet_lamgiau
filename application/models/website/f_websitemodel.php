@@ -23,6 +23,15 @@ class F_websitemodel extends MY_Model{
         return $q->first_row();
     }
 
+    public function getTypeWebsiteById_MID($idWebsite, $table){
+        $this->db->select('uet_content_mid.name');
+        $this->db->from('uet_content_mid');
+        $this->db->join($table, "uet_content_mid.id = $table.id_mid");
+        $this->db->where('uet_content_mid.id', $idWebsite);
+        $q= $this->db->get();
+        return $q->first_row();
+    }
+
     public function getDataById($table, $id){
        $q = $this->db->where('id',$id)->from($table)->count_all_results();
        return $q;
