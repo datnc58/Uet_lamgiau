@@ -65,7 +65,7 @@ class Uet_content_leftright extends MY_Controller
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_left_cateproduct') ;
         $library = $number->number + 1;
-        $pathImage = "library/content/left/$library/";
+        $pathImage = "library/content/left/danhmuc_sanpham/$library/";
         //kiểm tra thư mục có tồn tại chưa
         if(is_dir($pathImage)){
             //thư mục đã tồn tại
