@@ -27,7 +27,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  $newurl = str_replace("index.php","", $_SERVER['SCRIPT_NAME']);
  $BaseURL = "$http" . $_SERVER['SERVER_NAME'] . "" . $newurl;
 
+
 $config['base_url']    = "$BaseURL";
+
 
 
 /*

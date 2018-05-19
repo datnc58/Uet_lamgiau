@@ -6,6 +6,7 @@ class Uet_header extends MY_Controller
     function __construct()
     {
         parent::__construct();
+
         $this->load->model('website/f_headermodel');
         $this->load->model('website/f_websitemodel');
     }
@@ -15,24 +16,12 @@ class Uet_header extends MY_Controller
     {
         $data = array();
         $seo = array();
-
-        // get list data hearder
-        $data['headers'] = $this->f_headermodel->getListHeader();
-        // foreach ($data['headers'] as $val) {
-        //     $filename = $val->url . '/image.png';
-        //     $handle = fopen($filename, "rb");
-        //     $contents = fread($handle, filesize($filename));
-        //     fclose($handle);
-        //     header("content-type: image/jpeg");
-        //     echo $contents;die;
-        // }
-
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/header/index', $data);
         $this->LoadFooterWebsite();
     }
-	
-	function Add_header(){
+
+    function Add_header(){
         $data['select_website'] = $this->f_websitemodel->get_data('uet_website');
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_header') ;
@@ -99,6 +88,7 @@ class Uet_header extends MY_Controller
         $this->load->view('website/header/Add_header', $data);
         $this->LoadFooterWebsite();
     }
+
     public function editHeader($id=null){
         $data = array();
         $seo = array();
@@ -199,4 +189,5 @@ class Uet_header extends MY_Controller
         }
     }
 	
+
 }
