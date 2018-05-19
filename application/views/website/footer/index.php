@@ -24,9 +24,10 @@
                     </thead>
                     <tbody>
                         <?php if(isset($footers)){ foreach ($footers as $footer) {
-                            $i = 0;?>
+                            $i = 1;?>
                                 <tr>
-                                     <td><?= $i; ?></td>
+                                    <td></td>
+                                    <td><?= $i; ?></td>
                                     <td><img height="100px" src="<?= base_url($footer->url). '/image.png'?>"></td>
                                     <td><?= $footer->name?></td>
                                     <td><?= $footer->url?></td>
