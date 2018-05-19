@@ -14,4 +14,10 @@ class F_websitemodel extends MY_Model{
         return $q->first_row();
     }
 
+    function select_maxlibrary($table){
+        $this->db->select_max("number");
+        $reuslt = $this->db->get($table);
+        return $reuslt->first_row();
+    }
+
 }
