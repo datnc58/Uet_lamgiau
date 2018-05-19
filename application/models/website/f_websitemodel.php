@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class F_websitemodel extends MY_Model{
-    function __construct() {
+    public function __construct() {
         parent::__construct();
         $this->load->helper('model');
     }
@@ -18,10 +18,47 @@ class F_websitemodel extends MY_Model{
        return $q;
     }
 
-    function select_maxlibrary($table){
+    public function select_maxlibrary($table){
         $this->db->select_max("number");
         $reuslt = $this->db->get($table);
         return $reuslt->first_row();
     }
 
+    public function getListHeader(){
+        $query = $this->db->select('uet_header.id,
+                                    uet_header.name,
+                                    uet_header.url,
+                                    uet_header.number,
+                                    uet_header.status,
+                                    uet_website.name as web_name,
+                                    uet_website.code,
+                                    ')
+            ->from('uet_header')
+            ->join('uet_website', 'uet_header.id_website = uet_website.id')
+            ->where('uet_header.status', 1)
+            ->order_by('uet_header.id','desc')
+            ->group_by('uet_header.id')
+            ->get('');
+
+        return $query->result();
+    }
+
+    public function getListFooter(){
+        $query = $this->db->select('uet_footer.id,
+                                    uet_footer.name,
+                                    uet_footer.url,
+                                    uet_footer.number,
+                                    uet_footer.status,
+                                    uet_website.name as web_name,
+                                    uet_website.code,
+                                    ')
+            ->from('uet_footer')
+            ->join('uet_website', 'uet_footer.id_website = uet_website.id')
+            ->where('uet_footer.status', 1)
+            ->order_by('uet_footer.id','desc')
+            ->group_by('uet_footer.id')
+            ->get('');
+
+        return $query->result();
+    }
 }
