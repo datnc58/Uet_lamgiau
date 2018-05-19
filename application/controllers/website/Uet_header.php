@@ -86,4 +86,96 @@ class Uet_header extends MY_Controller
         $this->load->view('website/header/Add_header', $data);
         $this->LoadFooterWebsite();
     }
+
+    public function editHeader($id=null){
+        $data = array();
+        $seo = array();
+        $data['website'] = $this->f_websitemodel->getItemByID('uet_header',$id);
+        if(isset($_POST['submit'])) {
+            $idWeb = $_POST['idWeb'];
+            $url = $data['website']->url;
+            if(is_dir($url)){
+                // upload php
+                if (!empty($_FILES['php'])) {
+                    if (file_exists('uet.php'))
+                    {
+                        unlink('uet.php');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('php')) {
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'uet.php');
+                    }
+                }
+
+                // upload css
+                if (!empty($_FILES['style'])) {
+                    if (file_exists('style.css'))
+                    {
+                        unlink('style.css');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('style')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'style.css');
+                    }
+                }
+                // upload image
+                if (!empty($_FILES['image'])) {
+                    if (file_exists('image.png'))
+                    {
+                        unlink('image.png');
+                    }
+                    $this->load->library('upload');
+                    $config['upload_path'] = $url.'/';
+                    $config['allowed_types'] = 'php|jpg|png|css';
+                    $config['max_size'] = '*';
+                    $config['max_width'] = '5000';
+                    $config['max_height'] = '5000';
+                    $this->upload->initialize($config);
+                    if ( ! $this->upload->do_upload('image')) {
+
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else {
+                        $datafile = array('upload_data' => $this->upload->data());
+                        rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
+                    }
+                }
+            }
+            $update = array(
+                'name' => $_POST['name'],
+                'infor' => $_POST['infor'],
+
+            );
+            $this->f_websitemodel->Update('uet_header',$id,$update);
+            redirect(base_url('website/Uet_header'));
+        }
+
+        $data['typeWebsite'] = $this->f_websitemodel->getTypeWebsiteByID($data['website']->id_website);
+        $this->LoadHeaderWebsite($data, $seo, true);
+        $this->load->view('website/header/editHeader', $data);
+        $this->LoadFooterWebsite();
+    }
+	
+
 }
