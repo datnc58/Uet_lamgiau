@@ -188,7 +188,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                         'password' => '',
 
-                                        'database' => 'thoitrang',
+                                        'database' => 'thoitrang_utf8',
 
                                         'dbdriver' => 'mysqli',
 
