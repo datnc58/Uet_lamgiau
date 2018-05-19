@@ -60,7 +60,6 @@ class F_websitemodel extends MY_Model{
       return $query->result();
     }
 
-
     public function getListFooter(){
         $query = $this->db->select('uet_footer.id,
                                     uet_footer.name,
