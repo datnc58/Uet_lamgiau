@@ -93,7 +93,7 @@ class Uet_header extends MY_Controller
     public function editHeader($id=null){
         $data = array();
         $seo = array();
-        $checkRecode = $this->f_websitemodel->getDataById($id);
+        $checkRecode = $this->f_websitemodel->getDataById("uet_header",$id);
         if($checkRecode == 0){
             redirect(base_url('website/Uet_header'));
         }
