@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/News_hot')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Library_gioithieu')."/$id_mid"?>">
                     <div class="box">
                         <h4>Thư viện giới thiệu</h4>
                     </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Support_library')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Library_doitac')."/$id_mid"?>">
                     <div class="box">
                         <h4>Thư viện đối tác</h4>
                     </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Count_library')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Ykien_khachhang')."/$id_mid"?>">
                     <div class="box">
                         <h4>Ý kiến khách hàng</h4>
                     </div>
