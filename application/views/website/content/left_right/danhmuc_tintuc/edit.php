@@ -12,7 +12,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75); padding: 20px 0px;">
                 <input type="hidden" value="<?= $danhmuc_sanpham->id ?>" name ="idWeb">
                 <div class="form-group" style="width: 100%">
                     <div class="col-md-4">
-                        <label for="" style="margin-top: 7px;" class="pull-right">Tên danh mục sản phẩm</label>
+                        <label for="" style="margin-top: 7px;" class="pull-right">Tên danh mục tin tức</label>
                     </div>
                     <div class="col-md-8">
                         <input type="text" class="form-control" value="<?= $danhmuc_sanpham->name ?>" id="name" name="name" style="width: 100%; border-radius: 0px"/>
@@ -21,7 +21,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75); padding: 20px 0px;">
                 <div class="clearfix"></div>
                 <div class="form-group" style="width: 100%; margin-top: 20px;">
                     <div class="col-md-4">
-                        <label for="" style="margin-top: 7px;" class="pull-right">Thông tin danh mục sản phẩm</label>
+                        <label for="" style="margin-top: 7px;" class="pull-right">Thông tin danh mục tin tức</label>
                     </div>
                     <div class="col-md-8">
                         <input type="text" class="form-control" value="<?= $danhmuc_sanpham->infor ?>" id="infor" name="infor" style="width: 100%; border-radius: 0px"/>

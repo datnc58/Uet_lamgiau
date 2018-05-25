@@ -12,7 +12,7 @@
 
     <section class="content" style="text-align: center; background: #ffffff;">
         <div style="margin-bottom: 20px;">
-            <a href="<?=base_url('website/Uet_content_leftright/Add_danhmuc_sanpham');?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm danh mục sản phẩm</a>
+            <a href="<?=base_url('website/Uet_content_leftright/Add_danhmuc_tintuc');?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm danh mục tin tức</a>
         </div>
         <div class="clearfix" style="margin-top: 20px !important;"></div>
         <table id="example1" class="table table-striped table-bordered" style="width:100%; margin-top: 20px !important;">
@@ -37,8 +37,8 @@
                                     <td><?= $spdm->url?></td>
                                     <td><?= $spdm->number ?></td>
                                     <td>
-                                        <a href="<?=base_url('website/Uet_content_leftright/')."editDanhmucSanpham/$spdm->id"?>" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Sửa</a>
-                                        <a href="<?=base_url('website/Uet_content_leftright/')."DeleteDanhmucSanpham/$spdm->id"?>" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Xóa</a>
+                                        <a href="<?=base_url('website/Uet_content_leftright/')."editDanhmucTintuc/$spdm->id"?>" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Sửa</a>
+                                        <a href="<?=base_url('website/Uet_content_leftright/')."DeleteDanhmucTintuc/$spdm->id"?>" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Xóa</a>
                                     </td>
                                 </tr>
                             <?php }

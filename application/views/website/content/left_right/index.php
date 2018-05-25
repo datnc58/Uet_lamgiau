@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/News_category')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_tintuc')?>">
                     <div class="box">
                         <h4>Danh mục tin tức</h4>
                     </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Image_category')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_hinhanh')?>">
                     <div class="box">
                         <h4>Danh mục hình ảnh</h4>
                     </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Banner_library')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Banner_quangcao')?>">
                     <div class="box">
                         <h4>Banner quảng cáo</h4>
                     </div>
