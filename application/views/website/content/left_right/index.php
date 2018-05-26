@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Product_hot')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/SanPhamNoiBat')?>">
                     <div class="box">
                         <h4>Sản phẩm nổi bật</h4>
                     </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/News_hot')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/TinTucNoiBat')?>">
                     <div class="box">
                         <h4>Tin tức nổi bật</h4>
                     </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Support_library')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/HoTroKhachHang')?>">
                     <div class="box">
                         <h4>Hỗ trợ khách hàng</h4>
                     </div>
@@ -71,7 +71,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Count_library')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/ThongKeTruyCap')?>">
                     <div class="box">
                         <h4>Thống kê truy cập</h4>
                     </div>
