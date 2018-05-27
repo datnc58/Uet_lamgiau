@@ -12,7 +12,7 @@
 
     <section class="content" style="text-align: center; background: #ffffff;">
         <div style="margin-bottom: 20px;">
-            <a href="<?=base_url('website/Uet_content_leftright/AddHoTroKhachHang');?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm Hỗ trợ khách hàng</a>
+            <a href="<?=base_url('website/Uet_content_leftright/AddThongKeTruyCap');?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm danh Thống Kê Truy Cập</a>
         </div>
         <div class="clearfix" style="margin-top: 20px !important;"></div>
         <table id="example1" class="table table-striped table-bordered" style="width:100%; margin-top: 20px !important;">
@@ -27,7 +27,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if(isset($hotro_khachhang)){ foreach ($hotro_khachhang as $spdm) {
+                        <?php if(isset($thongke_truycap)){ foreach ($thongke_truycap as $spdm) {
                             $i = 0;
                             $i++; ?>
                                 <tr>
@@ -37,8 +37,8 @@
                                     <td><?= $spdm->url?></td>
                                     <td><?= $spdm->number ?></td>
                                     <td>
-                                        <a href="<?=base_url('website/Uet_content_leftright/')."editHotroKhachHang/$spdm->id"?>" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Sửa</a>
-                                        <a href="<?=base_url('website/Uet_content_leftright/')."DeleteHoTrokhachHang/$spdm->id"?>" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Xóa</a>
+                                        <a href="<?=base_url('website/Uet_content_leftright/')."editThongKeTruyCap/$spdm->id"?>" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Sửa</a>
+                                        <a href="<?=base_url('website/Uet_content_leftright/')."DeleteThongKeTruyCap/$spdm->id"?>" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Xóa</a>
                                     </td>
                                 </tr>
                             <?php }
