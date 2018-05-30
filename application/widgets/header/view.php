@@ -1,3 +1,4 @@
-<h1><?php echo $title ?></h1>
+<?php
+    $a = '';
 
-<h3><?php echo $content; ?></h3>
+?>
