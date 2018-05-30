@@ -356,6 +356,16 @@
                   </li>
               </ul>
           </li>
+          <li class="treeview"><a href="#"><i class="fa fa-book"></i><span>Thực hiện sinh web</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+              <ul class="treeview-menu">
+                  <li>
+                      <a href="<?= base_url('website/Uet_createwebsite')?>">
+                          <i class="fa fa-check-square"></i>
+                          <span>Thực hiện sinh web</span>
+                      </a>
+                  </li>
+              </ul>
+          </li>
       </ul>
 
     </section>
