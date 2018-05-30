@@ -8,7 +8,7 @@
     <section class="content" style="text-align: center; background: #ffffff; display: inline-block; width: 100%">
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Product_category')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Product_category')."/$id_mid"?>">
                     <div class="box">
                         <h4>Sản phẩm theo danh mục</h4>
                     </div>
@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/News_category')?>">
+                <a href="<?=base_url('website/Uet_content_mid/News_category')."/$id_mid"?>">
                     <div class="box">
                         <h4>Tin tức theo danh mục</h4>
                     </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Banner_library')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Product_hot')."/$id_mid"?>">
                     <div class="box">
                         <h4>Sản phẩm nổi bật</h4>
                     </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Product_hot')?>">
+                <a href="<?=base_url('website/Uet_content_mid/News_hot')."/$id_mid"?>">
                     <div class="box">
                         <h4>Tin tức nổi bật</h4>
                     </div>
