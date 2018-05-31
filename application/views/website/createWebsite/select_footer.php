@@ -6,17 +6,18 @@
 <!-- Main content -->
 <div class="col-md-12">
     <section class="content" style="text-align: center; background: #ffffff; width: 100%; display: inline-block; padding: 30px 0px;">
-        <div class="col-md-6">
-            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+        <div class="col-md-12">
+            <a href="<?=base_url('')?>">
                 <div class="mid" style="text-align: center">
-                    <img src="<?=base_url('assets/library/advance/index1.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
+                    <img src="<?=base_url('assets/library/footer_container.png');?>" style="width: 80%; margin: 0 auto;" alt=""/>
                 </div>
             </a>
         </div>
-        <div class="col-md-6">
-            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+        <div class="clearfix"></div>
+        <div class="col-md-12" style="margin-top: 50px;">
+            <a href="<?=base_url('')?>">
                 <div class="mid" style="text-align: center">
-                    <img src="<?=base_url('assets/library/advance/index2.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
+                    <img src="<?=base_url('assets/library/footer_full.png');?>" style="width: 80%; margin: 0 auto;" alt=""/>
                 </div>
             </a>
         </div>
