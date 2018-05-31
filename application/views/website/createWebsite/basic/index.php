@@ -7,31 +7,30 @@
 <div class="col-md-12">
     <section class="content" style="text-align: center; background: #ffffff; width: 100%; display: inline-block; padding: 30px 0px;">
         <div class="col-md-6">
-            <a href="<?=base_url('')?>">
-                <div class="" style="text-align: center">
+            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+                <div class="mid" style="text-align: center">
                     <img src="<?=base_url('assets/library/basic/index1.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
                 </div>
             </a>
         </div>
         <div class="col-md-6">
-            <a href="<?=base_url('website')?>">
-                <div class="" style="text-align: center">
+            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+                <div class="mid" style="text-align: center">
                     <img src="<?=base_url('assets/library/basic/index2.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
                 </div>
             </a>
         </div>
         <div class="clearfix"></div>
         <div class="col-md-6" style="margin-top: 50px;">
-            <a href="<?=base_url('website')?>">
-                <div class="" style="text-align: center">
+            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+                <div class="mid" style="text-align: center">
                     <img src="<?=base_url('assets/library/basic/index2.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
                 </div>
             </a>
         </div>
-
         <div class="col-md-6" style="margin-top: 50px;">
-            <a href="<?=base_url('website')?>">
-                <div class="" style="text-align: center">
+            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+                <div class="mid" style="text-align: center">
                     <img src="<?=base_url('assets/library/basic/index2.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
                 </div>
             </a>
@@ -67,10 +66,10 @@
         box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
     }
 
-    .mid {
+    .mid:hover {
         width: 100%;
-        background: #cccccc;
-        height: 300px;
+        background: #eaeaea;
+        height: auto;
         -webkit-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
         -moz-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
         box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
