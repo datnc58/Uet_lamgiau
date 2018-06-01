@@ -1,3 +1,9 @@
+<style>
+    thead tr th {
+        text-align: center;
+    }
+</style>
+
 </div>
 <footer class="main-footer">
     <div class="pull-right hidden-xs">

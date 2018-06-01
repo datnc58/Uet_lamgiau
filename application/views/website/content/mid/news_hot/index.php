@@ -17,18 +17,18 @@
         <div class="clearfix" style="margin-top: 20px !important;"></div>
         <table id="example1" class="table table-striped table-bordered" style="width:100%; margin-top: 20px !important;">
                     <thead>
-                        <tr>
-                            <th></th>
-                            <th>Stt</th>
-                            <th>Hình ảnh</th>
-                            <th>Url</th>
-                            <th>Số danh mục</th>
-                            <th colspan="2">Thao tác</th>
-                        </tr>
+                    <tr>
+                        <th align="center">Stt</th>
+                        <th align="center">Hình ảnh</th>
+                        <th align="center">Tên</th>
+                        <th align="center">Url</th>
+                        <th align="center">Số thư viện</th>
+                        <th  align="center" colspan="2">Thao tác</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <?php if(isset($danhmuc_sanpham) && !empty($danhmuc_sanpham)){ foreach ($danhmuc_sanpham as $spdm) {
-                            $i = 0;
+                        <?php if(isset($danhmuc_sanpham) && !empty($danhmuc_sanpham)){ $i = 0; foreach ($danhmuc_sanpham as $spdm) {
+
                             $i++; ?>
                                 <tr>
                                     <td><?= $i; ?></td>

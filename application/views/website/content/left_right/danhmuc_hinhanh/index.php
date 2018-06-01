@@ -17,18 +17,18 @@
         <div class="clearfix" style="margin-top: 20px !important;"></div>
         <table id="example1" class="table table-striped table-bordered" style="width:100%; margin-top: 20px !important;">
                     <thead>
-                        <tr>
-                            <th></th>
-                            <th>Stt</th>
-                            <th>Hình ảnh</th>
-                            <th>Url</th>
-                            <th>Số thư viện</th>
-                            <th colspan="2">Thao tác</th>
-                        </tr>
+                    <tr>
+                        <th align="center">Stt</th>
+                        <th align="center">Hình ảnh</th>
+                        <th align="center">Tên</th>
+                        <th align="center">Url</th>
+                        <th align="center">Số thư viện</th>
+                        <th  align="center" colspan="2">Thao tác</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <?php if(isset($danhmuc_sanpham)){ foreach ($danhmuc_sanpham as $spdm) {
-                            $i = 0;
+                        <?php if(isset($danhmuc_sanpham)){ $i = 0; foreach ($danhmuc_sanpham as $spdm) {
+
                             $i++; ?>
                                 <tr>
                                      <td><?= $i; ?></td>
@@ -38,6 +38,8 @@
                                     <td><?= $spdm->number ?></td>
                                     <td>
                                         <a href="<?=base_url('website/Uet_content_leftright/')."editDanhmucHinhanh/$spdm->id"?>" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Sửa</a>
+                                    </td>
+                                    <td>
                                         <a href="<?=base_url('website/Uet_content_leftright/')."DeleteDanhmucHinhanh/$spdm->id"?>" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Xóa</a>
                                     </td>
                                 </tr>

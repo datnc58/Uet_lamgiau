@@ -11,10 +11,11 @@ class Uet_content_leftright extends MY_Controller
     }
 
     //index
-    public function index()
+    public function index2($id_left= NULL)
     {
         $data = array();
         $seo = array();
+        $data['id_left'] = $id_left;
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/left_right/index', $data);
         $this->LoadFooterWebsite();
@@ -59,10 +60,12 @@ class Uet_content_leftright extends MY_Controller
     }
 
     //Sản phẩm theo danh mục
-    function Danhmuc_sanpham(){
+    function Danhmuc_sanpham($id = NULL){
         $data = array();
         $seo = array();
-        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_left_cateproduct');
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_left_cateproduct', array(
+            'id_left' => $id
+        ));
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/left_right/danhmuc_sanpham/index', $data);
         $this->LoadFooterWebsite();
@@ -128,7 +131,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/Danhmuc_sanpham'));
+            redirect(base_url('website/Uet_content_leftright/Add_danhmuc_sanpham'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -221,7 +224,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_header',$id,$update);
-            redirect(base_url('website/Uet_header'));
+            redirect(base_url('website/Uet_content_leftright/Add_danhmuc_sanpham'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['danhmuc_sanpham']->id_left, 'uet_left_cateproduct');
@@ -306,7 +309,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/Danhmuc_sanpham'));
+            redirect(base_url('website/Uet_content_leftright/Add_danhmuc_tintuc'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -399,7 +402,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_left_catenews',$id,$update);
-            redirect(base_url('website/Uet_content_leftright/Danhmuc_tintuc'));
+            redirect(base_url('website/Uet_content_leftright/Add_danhmuc_tintuc'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['danhmuc_sanpham']->id_left, 'uet_left_catenews');
@@ -485,7 +488,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/Danhmuc_hinhanh'));
+            redirect(base_url('website/Uet_content_leftright/Add_danhmuc_hinhanh'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -578,7 +581,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_left_media',$id,$update);
-            redirect(base_url('website/Uet_content_leftright/Danhmuc_hinhanh'));
+            redirect(base_url('website/Uet_content_leftright/Add_danhmuc_hinhanh'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['danhmuc_sanpham']->id_left, 'uet_left_catenews');
@@ -665,7 +668,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/Banner_quangcao'));
+            redirect(base_url('website/Uet_content_leftright/Add_banner_quangcao'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -758,7 +761,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_left_advertise',$id,$update);
-            redirect(base_url('website/Uet_content_leftright/Banner_quangcao'));
+            redirect(base_url('website/Uet_content_leftright/Add_banner_quangcao'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['danhmuc_sanpham']->id_left, 'uet_left_advertise');
@@ -844,7 +847,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/SanPhamNoiBat'));
+            redirect(base_url('website/Uet_content_leftright/AddSanPhamNoiBat'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -937,7 +940,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_left_hotproduct',$id,$update);
-            redirect(base_url('website/Uet_content_leftright/SanPhamNoiBat'));
+            redirect(base_url('website/Uet_content_leftright/AddSanPhamNoiBat'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['sanpham_noibat']->id_left, 'uet_left_hotproduct');
@@ -1024,7 +1027,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/TinTucNoiBat'));
+            redirect(base_url('website/Uet_content_leftright/AddTinTucNoiBat'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -1117,7 +1120,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_left_hotnews',$id,$update);
-            redirect(base_url('website/Uet_content_leftright/TinTucNoiBat'));
+            redirect(base_url('website/Uet_content_leftright/AddTinTucNoiBat'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['tintuc_noibat']->id_left, 'uet_left_hotnews');
@@ -1204,7 +1207,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/HoTroKhachHang'));
+            redirect(base_url('website/Uet_content_leftright/AddHoTroKhachHang'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -1297,7 +1300,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_left_support',$id,$update);
-            redirect(base_url('website/Uet_content_leftright/HoTroKhachHang'));
+            redirect(base_url('website/Uet_content_leftright/AddHoTroKhachHang'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['hotro_khachhang']->id_left, 'uet_left_support');
@@ -1383,7 +1386,7 @@ class Uet_content_leftright extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_leftright/ThongKeTruyCap'));
+            redirect(base_url('website/Uet_content_leftright/AddthongkeTruyCap'));
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -1476,7 +1479,7 @@ class Uet_content_leftright extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_left_counter',$id,$update);
-            redirect(base_url('website/Uet_content_leftright/ThongKeTruyCap'));
+            redirect(base_url('website/Uet_content_leftright/AddthongkeTruyCap'));
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_LEFTRIGHT($data['thongke_truycap']->id_left, 'uet_left_counter');
