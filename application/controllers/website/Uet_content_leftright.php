@@ -30,6 +30,14 @@ class Uet_content_leftright extends MY_Controller
         $this->LoadFooterWebsite();
     }
 
+    public function Uet_content_leftright_add(){
+        $data = array();
+        $seo = array();
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/index_add', $data);
+        $this->LoadFooterWebsite();
+    }
+
     function Add_contentleft_ajax(){
         $name = $_POST['name'];
         $id_content = $_POST['id_content'];

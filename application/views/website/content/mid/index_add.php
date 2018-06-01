@@ -8,43 +8,25 @@
     <section class="content" style="text-align: center; background: #ffffff; display: inline-block; width: 100%">
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_sanpham')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Add_Product_category')?>">
                     <div class="box">
-                        <h4>Danh mục sản phẩm</h4>
+                        <h4>Sản phẩm theo danh mục</h4>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_tintuc')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Add_News_category')?>">
                     <div class="box">
-                        <h4>Danh mục tin tức</h4>
+                        <h4>Tin tức theo danh mục</h4>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_hinhanh')?>">
-                    <div class="box">
-                        <h4>Danh mục hình ảnh</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Banner_quangcao')?>">
-                    <div class="box">
-                        <h4>Banner quảng cáo</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/SanPhamNoiBat')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Add_Product_hot')?>">
                     <div class="box">
                         <h4>Sản phẩm nổi bật</h4>
                     </div>
@@ -53,7 +35,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/TinTucNoiBat')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Add_News_hot')?>">
                     <div class="box">
                         <h4>Tin tức nổi bật</h4>
                     </div>
@@ -62,18 +44,27 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/HoTroKhachHang')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Add_library_gioithieu')?>">
                     <div class="box">
-                        <h4>Hỗ trợ khách hàng</h4>
+                        <h4>Thư viện giới thiệu</h4>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/ThongKeTruyCap')?>">
+                <a href="<?=base_url('website/Uet_content_mid/Add_library_doitac')?>">
                     <div class="box">
-                        <h4>Thống kê truy cập</h4>
+                        <h4>Thư viện đối tác</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="box">
+                <a href="<?=base_url('website/Uet_content_mid/Add_ykien_khachhang');?>">
+                    <div class="box">
+                        <h4>Ý kiến khách hàng</h4>
                     </div>
                 </a>
             </div>

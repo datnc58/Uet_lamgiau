@@ -20,6 +20,14 @@ class Uet_content_mid extends MY_Controller
         $this->LoadFooterWebsite();
     }
 
+    public  function Uet_content_mid_add(){
+        $data = array();
+        $seo = array();
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/mid/index_add', $data);
+        $this->LoadFooterWebsite();
+    }
+
     public function AddContentMid($id = null){
         $data = array();
         $seo = array();

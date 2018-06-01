@@ -8,7 +8,7 @@
     <section class="content" style="text-align: center; background: #ffffff; display: inline-block; width: 100%">
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_sanpham')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Add_danhmuc_sanpham')?>">
                     <div class="box">
                         <h4>Danh mục sản phẩm</h4>
                     </div>
@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_tintuc')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Add_danhmuc_tintuc')?>">
                     <div class="box">
                         <h4>Danh mục tin tức</h4>
                     </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_hinhanh')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Add_danhmuc_hinhanh')?>">
                     <div class="box">
                         <h4>Danh mục hình ảnh</h4>
                     </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Banner_quangcao')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/Add_banner_quangcao')?>">
                     <div class="box">
                         <h4>Banner quảng cáo</h4>
                     </div>
@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/SanPhamNoiBat')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/AddSanPhamNoiBat')?>">
                     <div class="box">
                         <h4>Sản phẩm nổi bật</h4>
                     </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/TinTucNoiBat')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/AddTinTucNoiBat')?>">
                     <div class="box">
                         <h4>Tin tức nổi bật</h4>
                     </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/HoTroKhachHang')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/AddHoTroKhachHang')?>">
                     <div class="box">
                         <h4>Hỗ trợ khách hàng</h4>
                     </div>
@@ -71,7 +71,7 @@
         </div>
         <div class="col-md-3">
             <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/ThongKeTruyCap')?>">
+                <a href="<?=base_url('website/Uet_content_leftright/AddThongKeTruyCap')?>">
                     <div class="box">
                         <h4>Thống kê truy cập</h4>
                     </div>

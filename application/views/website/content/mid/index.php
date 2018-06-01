@@ -88,11 +88,11 @@
 
     .box {
         width: 100%;
-        background: #cccccc;
+        background: #1accda;
         height: 200px;
-        -webkit-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
-        -moz-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
-        box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
+        -webkit-box-shadow: 2px 2px 8px 0px rgba(77,74,77,1);
+        -moz-box-shadow: 2px 2px 8px 0px rgba(77,74,77,1);
+        box-shadow: 2px 2px 8px 0px rgba(77,74,77,1);
     }
 </style>
 <!-- /.content -->
