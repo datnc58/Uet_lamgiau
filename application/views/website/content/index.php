@@ -37,7 +37,7 @@
                         foreach($loai_left as $left){
                             if($left->id_content == $content->id ){ ?>
                                 <div class="col-md-4">
-                                    <a href="<?=base_url('website/Uet_content_leftright')?>">
+                                    <a href="<?=base_url('website/Uet_content_leftright/index2/').$left->id;?>">
                                         <div class="left-right">
                                             <h4><?=$left->name;?></h4>
                                         </div>
@@ -54,7 +54,7 @@
                         foreach($loai_mid as $mid){
                             if($mid->id_content == $content->id ){ ?>
                                 <div class="col-md-8">
-                                    <a href="<?=base_url('website/Uet_content_mid/index2')."/$mid->id"?>">
+                                    <a href="<?=base_url('website/Uet_content_mid/index2/').$mid->id?>">
                                         <div class="mid">
                                             <h4><?=$mid->name;?></h4>
                                         </div>

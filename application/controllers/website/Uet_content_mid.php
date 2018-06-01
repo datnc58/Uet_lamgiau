@@ -63,14 +63,14 @@ class Uet_content_mid extends MY_Controller
         $data = array();
         $seo = array();
         $data['id_mid'] = $id_mid;
-        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_content_mid', array('id_mid'=> $id_mid));
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/mid/gioithieu/index', $data);
         $this->LoadFooterWebsite();
     }
 
     function Add_library_gioithieu($id_mid = NULL){
-        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid');
 
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_mid_introduce') ;
@@ -130,7 +130,7 @@ class Uet_content_mid extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_mid/Library_gioithieu')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_library_gioithieu')."/$id_mid");
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -223,7 +223,7 @@ class Uet_content_mid extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_mid_introduce',$id,$update);
-            redirect(base_url('website/Uet_content_mid/Library_gioithieu')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_library_gioithieu')."/$id_mid");
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_introduce');
@@ -244,14 +244,14 @@ class Uet_content_mid extends MY_Controller
         $data = array();
         $seo = array();
         $data['id_mid'] = $id_mid;
-        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_mid_partner', array('id'=> $id_mid));
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_mid_partner', array('id_mid'=> $id_mid));
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/mid/doitac/index', $data);
         $this->LoadFooterWebsite();
     }
 
     function Add_library_doitac($id_mid = NULL){
-        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid');
 
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_mid_partner') ;
@@ -311,7 +311,7 @@ class Uet_content_mid extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_mid/Library_doitac')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_library_doitac')."/$id_mid");
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -404,7 +404,7 @@ class Uet_content_mid extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_mid_partner',$id,$update);
-            redirect(base_url('website/Uet_content_mid/Library_doitac')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_library_doitac')."/$id_mid");
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_partner');
@@ -425,14 +425,14 @@ class Uet_content_mid extends MY_Controller
         $data = array();
         $seo = array();
         $data['id_mid'] = $id_mid;
-        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_mid_customer', array('id'=> $id_mid));
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_mid_customer', array('id_mid'=> $id_mid));
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/mid/ykien_khachhang/index', $data);
         $this->LoadFooterWebsite();
     }
 
     function Add_ykien_khachhang($id_mid = NULL){
-        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid');
 
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_mid_customer') ;
@@ -492,7 +492,7 @@ class Uet_content_mid extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_mid/Ykien_khachhang')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_ykien_khachhang')."/$id_mid");
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -585,7 +585,7 @@ class Uet_content_mid extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_mid_customer',$id,$update);
-            redirect(base_url('website/Uet_content_mid/Ykien_khachhang')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_ykien_khachhang')."/$id_mid");
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_customer');
@@ -602,6 +602,7 @@ class Uet_content_mid extends MY_Controller
     }
     // sản phẩm theo danh mục
     function Product_category($id_mid = NULL){
+
         $data = array();
         $seo = array();
         $data['id_mid'] = $id_mid;
@@ -611,7 +612,7 @@ class Uet_content_mid extends MY_Controller
         $this->LoadFooterWebsite();
     }
     public function Add_Product_category ($id_mid = NULL) {
-        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid');
 
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_mid_customer') ;
@@ -671,7 +672,7 @@ class Uet_content_mid extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_mid/Product_category')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_Product_category')."/$id_mid");
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -763,7 +764,7 @@ class Uet_content_mid extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_mid_productcate',$id,$update);
-            redirect(base_url('website/Uet_content_mid/product_category')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_Product_category')."/$id_mid");
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_productcate');
@@ -790,7 +791,7 @@ class Uet_content_mid extends MY_Controller
         $this->LoadFooterWebsite();
     }
     public function Add_News_category ($id_mid = NULL) {
-        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid');
 
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_mid_newscate') ;
@@ -850,7 +851,7 @@ class Uet_content_mid extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_mid/News_category')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_News_category')."/$id_mid");
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -942,7 +943,7 @@ class Uet_content_mid extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_mid_newscate',$id,$update);
-            redirect(base_url('website/Uet_content_mid/News_category')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_News_category')."/$id_mid");
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_newscate');
@@ -968,7 +969,7 @@ class Uet_content_mid extends MY_Controller
         $this->LoadFooterWebsite();
     }
     public function Add_Product_hot ($id_mid = NULL) {
-        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid');
 
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_mid_producthot') ;
@@ -1028,7 +1029,7 @@ class Uet_content_mid extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_mid/Product_hot')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_Product_hot')."/$id_mid");
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -1120,7 +1121,7 @@ class Uet_content_mid extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_mid_producthot',$id,$update);
-            redirect(base_url('website/Uet_content_mid/Product_hot')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_Product_hot')."/$id_mid");
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_producthot');
@@ -1146,7 +1147,7 @@ class Uet_content_mid extends MY_Controller
         $this->LoadFooterWebsite();
     }
     public function Add_News_hot ($id_mid = NULL) {
-        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
+        $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid');
 
         $seo = array();
         $number = $this->f_websitemodel->select_maxlibrary('uet_mid_newshot') ;
@@ -1206,7 +1207,7 @@ class Uet_content_mid extends MY_Controller
                     rename($datafile['upload_data']['full_path'],$datafile['upload_data']['file_path'].'image.png');
                 }
             }
-            redirect(base_url('website/Uet_content_mid/News_category')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_News_hot')."/$id_mid");
         }
 
         $this->LoadHeaderWebsite(null, $seo, true);
@@ -1298,7 +1299,7 @@ class Uet_content_mid extends MY_Controller
 
             );
             $this->f_websitemodel->Update('uet_mid_newshot',$id,$update);
-            redirect(base_url('website/Uet_content_mid/News_hot')."/$id_mid");
+            redirect(base_url('website/Uet_content_mid/Add_News_hot')."/$id_mid");
         }
 
         $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_newshot');
