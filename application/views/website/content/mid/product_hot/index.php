@@ -12,7 +12,7 @@
 
     <section class="content" style="text-align: center; background: #ffffff;">
         <div style="margin-bottom: 20px;">
-            <a href="<?=base_url('website/Uet_content_mid/Add_Product_hot')."/$id_mid";?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm sản phẩm nổi bật</a>
+<!--            <a href="--><?//=base_url('website/Uet_content_mid/Add_Product_hot')."/$id_mid";?><!--" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm sản phẩm nổi bật</a>-->
         </div>
         <div class="clearfix" style="margin-top: 20px !important;"></div>
         <table id="example1" class="table table-striped table-bordered" style="width:100%; margin-top: 20px !important;">
