@@ -39,7 +39,7 @@
                                 <div class="col-md-4">
                                     <a href="<?=base_url('website/Uet_content_leftright')?>">
                                         <div class="left-right">
-                                            <h4>Cấu hình khối trái - phải<br> LEFT -RIGHT</h4>
+                                            <h4>Danh sách thư viện<br> LEFT -RIGHT</h4>
                                         </div>
                                     </a>
                                 </div>
@@ -56,7 +56,7 @@
                                 <div class="col-md-8">
                                     <a href="<?=base_url('website/Uet_content_mid/index2')."/$mid->id"?>">
                                         <div class="mid">
-                                            <h4>Cấu hình khối giữa <BR>
+                                            <h4>Danh sách thư viện <BR>
                                                 CONTENT</h4>
                                         </div>
                                     </a>
@@ -96,20 +96,20 @@
 
     .left-right {
         width: 100%;
-        background: #cccccc;
+        background: #1accda;;
         height: 500px;
-        -webkit-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
-        -moz-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
-        box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
+        -webkit-box-shadow: 2px 2px 6px 0px rgba(77,74,77,1);
+        -moz-box-shadow: 2px 2px 6px 0px rgba(77,74,77,1);
+        box-shadow: 2px 2px 6px 0px rgba(77,74,77,1);
     }
 
     .mid {
         width: 100%;
-        background: #cccccc;
+        background: #1accda;
         height: 500px;
-        -webkit-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
-        -moz-box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
-        box-shadow: 2px 2px 28px 0px rgba(77,74,77,1);
+        -webkit-box-shadow: 2px 2px 6px 0px rgba(77,74,77,1);
+        -moz-box-shadow: 2px 2px 6px 0px rgba(77,74,77,1);
+        box-shadow: 2px 2px 6px 0px rgba(77,74,77,1);
     }
 </style>
 <!-- /.content -->

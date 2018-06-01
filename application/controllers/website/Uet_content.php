@@ -33,6 +33,17 @@ class Uet_content extends MY_Controller
         $this->LoadFooterWebsite();
     }
 
+    public function Uet_content_add(){
+        $data = array();
+        $seo = array();
+        $data['loai_content'] = $this->f_websitemodel->get_data('uet_content');
+        $data['loai_left'] = $this->f_websitemodel->get_data('uet_content_left');
+        $data['loai_mid'] = $this->f_websitemodel->get_data('uet_content_mid');
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/index_add', $data);
+        $this->LoadFooterWebsite();
+    }
+
     function Add_content_ajax(){
         $name = $_POST['name'];
         $id_website = $_POST['id_website'];
