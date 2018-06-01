@@ -14,7 +14,7 @@
                 if(isset($loai_content)){
                     $i = 1;
                     foreach($loai_content as $content){ ?>
-                        <li role="presentation" <?php if($i ==1 ){?> class="active" <?php } ?> ><a href="#vanduong_<?=$content->id;?>" aria-controls="home" role="tab" data-toggle="tab"><?=$content->name; ?></a></li>
+                        <li role="presentation" <?php if($i ==1 ){?> class="active" <?php } ?> ><a href="#vanduong_<?=$content->id;?>" aria-controls="home" role="tab" data-toggle="tab" style="text-transform: uppercase; font-weight: bold;"><?=$content->name; ?></a></li>
             <?php   $i++; }
                 }
             ?>
@@ -39,7 +39,7 @@
                                 <div class="col-md-4">
                                     <a href="<?=base_url('website/Uet_content_leftright')?>">
                                         <div class="left-right">
-                                            <h4>Danh sách thư viện<br> LEFT -RIGHT</h4>
+                                            <h4><?=$left->name;?></h4>
                                         </div>
                                     </a>
                                 </div>
@@ -56,8 +56,7 @@
                                 <div class="col-md-8">
                                     <a href="<?=base_url('website/Uet_content_mid/index2')."/$mid->id"?>">
                                         <div class="mid">
-                                            <h4>Danh sách thư viện <BR>
-                                                CONTENT</h4>
+                                            <h4><?=$mid->name;?></h4>
                                         </div>
                                     </a>
                                 </div>

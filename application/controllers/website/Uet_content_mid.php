@@ -636,7 +636,6 @@ class Uet_content_mid extends MY_Controller
                         'number' => $library,
                         'url' => $pathImage,
                     );
-                    var_dump($insert);die;
                     $this->f_websitemodel->Add('uet_mid_productcate', $insert);
                 }
                 //thực hiện import file
@@ -785,7 +784,7 @@ class Uet_content_mid extends MY_Controller
         $data = array();
         $seo = array();
         $data['id_mid'] = $id_mid;
-        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_mid_newstcate', array('id_mid'=> $id_mid));
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_mid_newscate', array('id_mid'=> $id_mid));
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/mid/news_category/index', $data);
         $this->LoadFooterWebsite();
@@ -794,7 +793,7 @@ class Uet_content_mid extends MY_Controller
         $data['select_left'] = $this->f_websitemodel->get_data('uet_content_mid', array('id'=> $id_mid));
 
         $seo = array();
-        $number = $this->f_websitemodel->select_maxlibrary('uet_mid_newstcate') ;
+        $number = $this->f_websitemodel->select_maxlibrary('uet_mid_newscate') ;
         $library = $number->number + 1;
         $pathImage = "library/content/mid/news_category/$library/";
         //kiểm tra thư mục có tồn tại chưa
@@ -816,8 +815,7 @@ class Uet_content_mid extends MY_Controller
                         'number' => $library,
                         'url' => $pathImage,
                     );
-                    var_dump($insert);die;
-                    $this->f_websitemodel->Add('uet_mid_newstcate', $insert);
+                    $this->f_websitemodel->Add('uet_mid_newscate', $insert);
                 }
                 //thực hiện import file
                 $this->load->library('upload');
@@ -862,11 +860,11 @@ class Uet_content_mid extends MY_Controller
     public function edit_News_category($id=null, $id_mid = NULL){
         $data = array();
         $seo = array();
-        $checkRecode = $this->f_websitemodel->getDataById("uet_mid_newstcate",$id);
+        $checkRecode = $this->f_websitemodel->getDataById("uet_mid_newscate",$id);
         if($checkRecode == 0){
             redirect(base_url('website/Uet_content_mid/News_category')."/$id_mid");
         }
-        $data['danhmuc_sanpham'] = $this->f_websitemodel->getItemByID('uet_mid_newstcate',$id);
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->getItemByID('uet_mid_newscate',$id);
         if(isset($_POST['submit'])) {
             $idWeb = $_POST['idWeb'];
             $url = $data['website']->url;
@@ -943,11 +941,11 @@ class Uet_content_mid extends MY_Controller
                 'infor' => $_POST['infor'],
 
             );
-            $this->f_websitemodel->Update('uet_mid_newstcate',$id,$update);
+            $this->f_websitemodel->Update('uet_mid_newscate',$id,$update);
             redirect(base_url('website/Uet_content_mid/News_category')."/$id_mid");
         }
 
-        $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_newstcate');
+        $data['typeLeft'] = $this->f_websitemodel->getTypeWebsiteById_MID($data['danhmuc_sanpham']->id_mid, 'uet_mid_newscate');
         $this->LoadHeaderWebsite($data, $seo, true);
         $this->load->view('website/content/mid/news_category/edit', $data);
         $this->LoadFooterWebsite();
@@ -995,7 +993,6 @@ class Uet_content_mid extends MY_Controller
                         'number' => $library,
                         'url' => $pathImage,
                     );
-                    var_dump($insert);die;
                     $this->f_websitemodel->Add('uet_mid_producthot', $insert);
                 }
                 //thực hiện import file
@@ -1174,7 +1171,6 @@ class Uet_content_mid extends MY_Controller
                         'number' => $library,
                         'url' => $pathImage,
                     );
-                    var_dump($insert);die;
                     $this->f_websitemodel->Add('uet_mid_newshot', $insert);
                 }
                 //thực hiện import file
