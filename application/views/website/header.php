@@ -68,9 +68,9 @@
 
 <script src="<?= base_url('assets/js_admin/bootstrap.min.js')?>"></script>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
-<script type= 'text/javascript' src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script type= 'text/javascript' src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?=base_url('assets/css/datatable.css');?>">
+<script type= 'text/javascript' src="<?=base_url('assets/js/jquery.datatable.js');?>"></script>
+<script type= 'text/javascript' src="<?=base_url('assets/js/datatable.js');?>"></script>
 
 	</head>
 
@@ -348,6 +348,12 @@
           </li>
           <li class="treeview"><a href="#"><i class="fa fa-book"></i><span>Quản lý content</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
               <ul class="treeview-menu">
+                  <li>
+                      <a href="<?= base_url('website/Uet_content')?>">
+                          <i class="fa fa-check-square"></i>
+                          <span>Thêm thư viện</span>
+                      </a>
+                  </li>
                   <li>
                       <a href="<?= base_url('website/Uet_content')?>">
                           <i class="fa fa-check-square"></i>

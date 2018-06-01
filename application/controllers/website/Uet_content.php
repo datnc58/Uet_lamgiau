@@ -52,4 +52,15 @@ class Uet_content extends MY_Controller
             echo 1;
         }
     }
+
+    public function addContentTop($id = ''){
+        $data = array();
+        $seo = array();
+        $data['website'] = $this->f_websitemodel->get_data('uet_website');
+        $data['content'] = $this->f_websitemodel->getItemByID('uet_content_top',$id);
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/AddContentTop', $data);
+        $this->LoadFooterWebsite();
+    }
+
 }
