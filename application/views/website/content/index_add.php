@@ -15,7 +15,7 @@
             <div class="text-center">
                 <section>
                     <div class="col-md-4">
-                        <a href="<?=base_url('website/Uet_content_leftright_add')?>">
+                        <a href="<?=base_url('website/Uet_content_leftright/Uet_content_leftright_add')?>">
                             <div class="left-right">
                                 <h4>Thêm thư viện<br> LEFT -RIGHT</h4>
                             </div>
