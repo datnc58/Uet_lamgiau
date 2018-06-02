@@ -62,6 +62,14 @@
         box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
     }
 
+    #multiselect1_to option {
+        width: 100%;
+        padding: 12px 10px;
+        margin: 3px 0px;;
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
+        box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
+    }
     .button_to {
         padding: 5px 20px;
         width: 100px;;
