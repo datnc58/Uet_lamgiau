@@ -23,7 +23,7 @@
                     </select>
                 </div>
 
-                <div class="col-xs-2 col-xs-push-1" style="text-align: center; padding-top: 140px;">
+                <div class="col-xs-2 col-xs-push-1" style="text-align: center; padding-top: 100px;">
                     <button type="button" id="multiselect1_rightAll" class="button_to"><i class="glyphicon glyphicon-forward"></i></button>
                     <button type="button" id="multiselect1_rightSelected" class="button_to"><i class="glyphicon glyphicon-chevron-right"></i></button>
                     <button type="button" id="multiselect1_leftSelected" class="button_to"><i class="glyphicon glyphicon-chevron-left"></i></button>
@@ -54,6 +54,15 @@
     }
 
     #multiselect1 option {
+        width: 100%;
+        padding: 12px 10px;
+        margin: 3px 0px;;
+        -webkit-box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
+        -moz-box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
+        box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
+    }
+
+    #multiselect1_to option {
         width: 100%;
         padding: 12px 10px;
         margin: 3px 0px;;
