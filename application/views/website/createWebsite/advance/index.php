@@ -1,20 +1,22 @@
 <meta charset="utf-8"/>
 <!-- Content Header (Page header) -->
 <section class="content-header">
-
+    <ul class="menu_link">
+        <li><a href="<?=base_url('website/Uet_createwebsite/').$current_page.'/'.$id_web?>">Bước 1: chọn loại</a></li>
+    </ul>
 </section>
 <!-- Main content -->
 <div class="col-md-12">
     <section class="content" style="text-align: center; background: #ffffff; width: 100%; display: inline-block; padding: 30px 0px;">
         <div class="col-md-6">
-            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+            <a href="<?=base_url('website/Uet_createwebsite/select_header/').$id_web?>">
                 <div class="mid" style="text-align: center">
                     <img src="<?=base_url('assets/library/advance/index1.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
                 </div>
             </a>
         </div>
         <div class="col-md-6">
-            <a href="<?=base_url('website/Uet_createwebsite/select_header')?>">
+            <a href="<?=base_url('website/Uet_createwebsite/select_header/').$id_web?>">
                 <div class="mid" style="text-align: center">
                     <img src="<?=base_url('assets/library/advance/index2.png');?>" style="width: 60%; margin: 0 auto;" alt=""/>
                 </div>
