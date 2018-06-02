@@ -2,6 +2,22 @@
     thead tr th {
         text-align: center;
     }
+    .menu_link {
+        list-style: none;
+    }
+
+    .menu_link li {
+        display: inline-block;
+        padding: 5px 20px 5px 10px;;
+        background: #fff;
+        border-radius: 0px 100px 100px 0px;
+        margin-right: 10px;;
+    }
+
+    .menu_link li a {
+        font-weight: bold;
+    }
+
 </style>
 
 </div>
