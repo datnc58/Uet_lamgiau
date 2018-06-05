@@ -18,7 +18,8 @@
 
 <meta property="og:description" content="<?= @$Description ?>" />
 
-  <title><?= @$headerTitle?></title>
+  <title><?php //$headerTitle;
+      ?></title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -362,15 +363,8 @@
                   </li>
               </ul>
           </li>
-          <li class="treeview"><a href="#"><i class="fa fa-book"></i><span>Thực hiện sinh web</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
-              <ul class="treeview-menu">
-                  <li>
-                      <a href="<?= base_url('website/Uet_createwebsite')?>">
-                          <i class="fa fa-check-square"></i>
-                          <span>Thực hiện sinh web</span>
-                      </a>
-                  </li>
-              </ul>
+          <li><a href="<?= base_url('website/Uet_createwebsite')?>"><i class="fa fa-book"></i><span>Thực hiện sinh web</span><span class="pull-right-container"></a>
+
           </li>
       </ul>
 
