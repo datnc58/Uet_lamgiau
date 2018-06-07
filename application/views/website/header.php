@@ -18,7 +18,7 @@
 
 <meta property="og:description" content="<?= @$Description ?>" />
 
-  <title><?php //$headerTitle;
+  <title><?php echo $headerTitle;
       ?></title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -347,9 +347,9 @@
                   </li>
               </ul>
           </li>
-          <li class="treeview"><a href="#"><i class="fa fa-book"></i><span>Quản lý content</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+          <li class="treeview "><a href="#"><i class="fa fa-book"></i><span>Quản lý content</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
               <ul class="treeview-menu">
-                  <li>
+                  <li class="hidden">
                       <a href="<?= base_url('website/Uet_content/Uet_content_add')?>">
                           <i class="fa fa-check-square"></i>
                           <span>Thêm thư viện</span>

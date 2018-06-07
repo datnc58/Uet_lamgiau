@@ -8,7 +8,7 @@
     <section class="content" style="text-align: center; background: #ffffff; width: 100%; display: inline-block; padding: 30px 0px;">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-xs-4 col-xs-push-1">
+                <div class="col-xs-5 ">
                     <select name="from[]" id="multiselect1" class="form-control" size="8" multiple="multiple">
                         <?php
                             if(isset($content_detail) && !empty($content_detail)){
@@ -20,20 +20,27 @@
                     </select>
                 </div>
 
-                <div class="col-xs-2 col-xs-push-1" style="text-align: center; padding-top: 240px;">
-                    <button type="button" id="multiselect1_rightAll" class="button_to"><i class="glyphicon glyphicon-forward"></i></button>
+                <div class="col-xs-2" style="text-align: center; padding-top: 240px;">
                     <button type="button" id="multiselect1_rightSelected" class="button_to"><i class="glyphicon glyphicon-chevron-right"></i></button>
                     <button type="button" id="multiselect1_leftSelected" class="button_to"><i class="glyphicon glyphicon-chevron-left"></i></button>
-                    <button type="button" id="multiselect1_leftAll" class="button_to"><i class="glyphicon glyphicon-backward"></i></button>
                 </div>
 
-                <div class="col-xs-4 col-xs-push-1">
+                <div class="col-xs-5 ">
                     <select name="to[]" id="multiselect1_to" class="form-control" size="8" multiple="multiple"></select>
                 </div>
             </div>
         </div>
     </section>
 </div>
+<!--
+    B1: Chọn cấu hình các content
+    B2: Chọn loại thư viện cho các content nhỏ -> phân biệt bằng thuộc tính left - mid - right -> lưu vào bảng
+    B3: Chọn thư viện hiển thị ra ngoài cho website
+
+-->
+
+
+
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $('#multiselect1').multiselect();
@@ -66,6 +73,7 @@
         -webkit-box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
         -moz-box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
         box-shadow: 1px 1px 8px 0px rgba(77,74,77,1);
+        cursor: pointer;
     }
 
     #multiselect1_to option {
