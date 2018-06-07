@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2018-06-05 09:14:32
+Date: 2018-06-07 23:53:11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2548,11 +2548,122 @@ CREATE TABLE `site_log` (
   `access_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `visits_count` int(11) DEFAULT '0',
   PRIMARY KEY (`site_log_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=982 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM AUTO_INCREMENT=1093 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of site_log
 -- ----------------------------
+INSERT INTO `site_log` VALUES ('1092', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/SanPhamNoiBat/', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/index2/7', 'Uet_content_leftright/SanPhamNoiBat', 'mNoiBat', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:52:15', '0');
+INSERT INTO `site_log` VALUES ('1091', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/index2/7', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_leftright/index2', '/index2/7', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:52:13', '0');
+INSERT INTO `site_log` VALUES ('1090', '1', '::1', '/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:51:25', '0');
+INSERT INTO `site_log` VALUES ('1088', '1', '::1', '/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:50:43', '0');
+INSERT INTO `site_log` VALUES ('1089', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:51:01', '0');
+INSERT INTO `site_log` VALUES ('1087', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:50:43', '0');
+INSERT INTO `site_log` VALUES ('1086', '1', '::1', '/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:50:28', '0');
+INSERT INTO `site_log` VALUES ('1085', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:50:28', '0');
+INSERT INTO `site_log` VALUES ('1084', '1', '::1', '/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:50:04', '0');
+INSERT INTO `site_log` VALUES ('1083', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:50:04', '0');
+INSERT INTO `site_log` VALUES ('1082', '1', '::1', '/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:49:42', '0');
+INSERT INTO `site_log` VALUES ('1081', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:49:42', '0');
+INSERT INTO `site_log` VALUES ('1080', '1', '::1', '/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:49:24', '0');
+INSERT INTO `site_log` VALUES ('1079', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:49:24', '0');
+INSERT INTO `site_log` VALUES ('1078', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:48:52', '0');
+INSERT INTO `site_log` VALUES ('1077', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:48:52', '0');
+INSERT INTO `site_log` VALUES ('1076', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', '', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:48:10', '0');
+INSERT INTO `site_log` VALUES ('1075', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:48:05', '0');
+INSERT INTO `site_log` VALUES ('1074', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:48:02', '0');
+INSERT INTO `site_log` VALUES ('1073', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmoduleleft_ajax', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', 'Uet_content_mid/Add_contentmoduleleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:48:02', '0');
+INSERT INTO `site_log` VALUES ('1072', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', '', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:47:39', '0');
+INSERT INTO `site_log` VALUES ('1071', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:47:03', '0');
+INSERT INTO `site_log` VALUES ('1070', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/index2/7', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_leftright/index2', '/index2/7', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:45:33', '0');
+INSERT INTO `site_log` VALUES ('1069', '1', '::1', '/Uet_lamgiau/website/Uet_content', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/Uet_content_leftright_add', 'Uet_content/index', 't', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:45:31', '0');
+INSERT INTO `site_log` VALUES ('1068', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Uet_content_leftright_add', 'http://localhost/Uet_lamgiau/website/Uet_content/Uet_content_add', 'Uet_content_leftright/Uet_content_leftright_add', 'ght_add', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:45:27', '0');
+INSERT INTO `site_log` VALUES ('1067', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentModuleLeft', '', 'Uet_content_leftright/AddContentModuleLeft', 'uleLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:42:27', '0');
+INSERT INTO `site_log` VALUES ('1066', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/index2/7', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_leftright/index2', '/index2/7', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:42:23', '0');
+INSERT INTO `site_log` VALUES ('1065', '1', '::1', '/Uet_lamgiau/website/Uet_content', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content/index', 't', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:42:22', '0');
+INSERT INTO `site_log` VALUES ('1064', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:40:02', '0');
+INSERT INTO `site_log` VALUES ('1063', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_category/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_category', 'ategory', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:40:00', '0');
+INSERT INTO `site_log` VALUES ('1062', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:31', '0');
+INSERT INTO `site_log` VALUES ('1061', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_hot/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_hot', 'uct_hot', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:29', '0');
+INSERT INTO `site_log` VALUES ('1060', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_Product_hot', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/Product_hot/', 'Uet_content_mid/Add_Product_hot', 'uct_hot', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:26', '0');
+INSERT INTO `site_log` VALUES ('1059', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_hot/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_hot', 'uct_hot', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:25', '0');
+INSERT INTO `site_log` VALUES ('1058', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:24', '0');
+INSERT INTO `site_log` VALUES ('1057', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/News_category/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/News_category', 'ategory', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:22', '0');
+INSERT INTO `site_log` VALUES ('1056', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:21', '0');
+INSERT INTO `site_log` VALUES ('1055', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_category/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_category', 'ategory', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:18', '0');
+INSERT INTO `site_log` VALUES ('1054', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:17', '0');
+INSERT INTO `site_log` VALUES ('1053', '1', '::1', '/Uet_lamgiau/website/Uet_content', 'http://localhost/Uet_lamgiau/website/Uet_createwebsite', 'Uet_content/index', 't', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:15', '0');
+INSERT INTO `site_log` VALUES ('1052', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/Product_category', 'Uet_createwebsite/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:32:13', '0');
+INSERT INTO `site_log` VALUES ('1051', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_category/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_category', 'ategory', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:31:56', '0');
+INSERT INTO `site_log` VALUES ('1050', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_Product_category', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/Product_category/', 'Uet_content_mid/Add_Product_category', 'ategory', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:31:51', '0');
+INSERT INTO `site_log` VALUES ('1049', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_category/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_category', 'ategory', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:21:42', '0');
+INSERT INTO `site_log` VALUES ('1048', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:17:55', '0');
+INSERT INTO `site_log` VALUES ('1047', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:17:35', '0');
+INSERT INTO `site_log` VALUES ('1046', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmodulemid_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/Add_contentmodulemid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:17:35', '0');
+INSERT INTO `site_log` VALUES ('1045', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Ykien_khachhang/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Ykien_khachhang', 'achhang/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:17:17', '0');
+INSERT INTO `site_log` VALUES ('1044', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:17:15', '0');
+INSERT INTO `site_log` VALUES ('1043', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmodulemid_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/Add_contentmodulemid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:17:12', '0');
+INSERT INTO `site_log` VALUES ('1042', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:17:12', '0');
+INSERT INTO `site_log` VALUES ('1041', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Library_doitac/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Library_doitac', '_doitac/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:16:54', '0');
+INSERT INTO `site_log` VALUES ('1040', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:16:51', '0');
+INSERT INTO `site_log` VALUES ('1039', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmodulemid_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/Add_contentmodulemid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:16:44', '0');
+INSERT INTO `site_log` VALUES ('1038', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:16:44', '0');
+INSERT INTO `site_log` VALUES ('1037', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Library_gioithieu/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Library_gioithieu', 'oithieu/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:14:28', '0');
+INSERT INTO `site_log` VALUES ('1036', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:14:26', '0');
+INSERT INTO `site_log` VALUES ('1035', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:14:22', '0');
+INSERT INTO `site_log` VALUES ('1034', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmodulemid_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/Add_contentmodulemid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:14:22', '0');
+INSERT INTO `site_log` VALUES ('1033', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/News_hot/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/News_hot', 'ews_hot/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:14:14', '0');
+INSERT INTO `site_log` VALUES ('1032', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:14:00', '0');
+INSERT INTO `site_log` VALUES ('1031', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmodulemid_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/Add_contentmodulemid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:13:45', '0');
+INSERT INTO `site_log` VALUES ('1030', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:13:44', '0');
+INSERT INTO `site_log` VALUES ('1028', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:13:24', '0');
+INSERT INTO `site_log` VALUES ('1029', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_hot/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_hot', 'uct_hot/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:13:26', '0');
+INSERT INTO `site_log` VALUES ('1027', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:13:19', '0');
+INSERT INTO `site_log` VALUES ('1026', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmodulemid_ajax', 'http://localhost/Uet_lamgiau//website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/Add_contentmodulemid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:13:19', '0');
+INSERT INTO `site_log` VALUES ('1025', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/News_category/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/News_category', 'ategory/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:13:02', '0');
+INSERT INTO `site_log` VALUES ('1024', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:12:59', '0');
+INSERT INTO `site_log` VALUES ('1023', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/News_category/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/News_category', 'ategory/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:12:55', '0');
+INSERT INTO `site_log` VALUES ('1022', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:12:53', '0');
+INSERT INTO `site_log` VALUES ('1021', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_category/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_category', 'ategory/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:12:48', '0');
+INSERT INTO `site_log` VALUES ('1020', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:09:21', '0');
+INSERT INTO `site_log` VALUES ('1019', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmodulemid_ajax', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/Add_contentmodulemid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:09:21', '0');
+INSERT INTO `site_log` VALUES ('1018', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_category/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_category', 'ategory/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:09:07', '0');
+INSERT INTO `site_log` VALUES ('1017', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:07:25', '0');
+INSERT INTO `site_log` VALUES ('1016', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:07:04', '0');
+INSERT INTO `site_log` VALUES ('1015', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Product_category/5', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/index2/5', 'Uet_content_mid/Product_category', 'ategory/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:06:47', '0');
+INSERT INTO `site_log` VALUES ('1013', '1', '::1', '/Uet_lamgiau/website/Uet_content', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', 'Uet_content/index', 't', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:06:43', '0');
+INSERT INTO `site_log` VALUES ('1014', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/index2/5', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_mid/index2', '/index2/5', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:06:45', '0');
+INSERT INTO `site_log` VALUES ('1012', '1', '::1', '/Uet_lamgiau/website/Uet_content/Uet_content_add', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', 'Uet_content/Uet_content_add', 'ent_add', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:06:00', '0');
+INSERT INTO `site_log` VALUES ('1011', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/AddContentModuleMid', '', 'Uet_content_mid/AddContentModuleMid', 'duleMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:05:53', '0');
+INSERT INTO `site_log` VALUES ('1010', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Uet_content_mid_add', 'http://localhost/Uet_lamgiau/website/Uet_content/Uet_content_add', 'Uet_content_mid/Uet_content_mid_add', 'mid_add', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 23:05:51', '0');
+INSERT INTO `site_log` VALUES ('1009', '1', '::1', '/Uet_lamgiau/website/Uet_content/Uet_content_add', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content/Uet_content_add', 'ent_add', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:58:13', '0');
+INSERT INTO `site_log` VALUES ('1008', '1', '::1', '/Uet_lamgiau/website/Uet_content', 'http://localhost/Uet_lamgiau/website/Uet_content/Uet_content_add', 'Uet_content/index', 't', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:58:03', '0');
+INSERT INTO `site_log` VALUES ('1007', '1', '::1', '/Uet_lamgiau/website/Uet_content/Uet_content_add', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentMid', 'Uet_content/Uet_content_add', 'ent_add', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:58:02', '0');
+INSERT INTO `site_log` VALUES ('1006', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/AddContentMid', '', 'Uet_content_mid/AddContentMid', 'tentMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:59', '0');
+INSERT INTO `site_log` VALUES ('1005', '1', '::1', '/Uet_lamgiau//website/Uet_content_mid/', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentMid', 'Uet_content_mid/index', 'd', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:52', '0');
+INSERT INTO `site_log` VALUES ('1004', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/AddContentMid', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentMid', 'Uet_content_mid/AddContentMid', 'tentMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:50', '0');
+INSERT INTO `site_log` VALUES ('1003', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/Add_contentmid_ajax', 'http://localhost/Uet_lamgiau/website/Uet_content_mid/AddContentMid', 'Uet_content_mid/Add_contentmid_ajax', 'id_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:50', '0');
+INSERT INTO `site_log` VALUES ('1001', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentLeft', '', 'Uet_content_leftright/AddContentLeft', 'entLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:14', '0');
+INSERT INTO `site_log` VALUES ('1002', '1', '::1', '/Uet_lamgiau/website/Uet_content_mid/AddContentMid', '', 'Uet_content_mid/AddContentMid', 'tentMid', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:35', '0');
+INSERT INTO `site_log` VALUES ('1000', '1', '::1', '/Uet_lamgiau//website/Uet_content_leftright/', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentLeft', 'Uet_content_leftright/index', 't', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:07', '0');
+INSERT INTO `site_log` VALUES ('999', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentLeft', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentLeft', 'Uet_content_leftright/AddContentLeft', 'entLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:06', '0');
+INSERT INTO `site_log` VALUES ('998', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Add_contentleft_ajax', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/AddContentLeft', 'Uet_content_leftright/Add_contentleft_ajax', 'ft_ajax', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:57:06', '0');
+INSERT INTO `site_log` VALUES ('997', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/AddContentLeft', '', 'Uet_content_leftright/AddContentLeft', 'entLeft', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:55:09', '0');
+INSERT INTO `site_log` VALUES ('996', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/Uet_content_leftright_add', 'http://localhost/Uet_lamgiau/website/Uet_content/Uet_content_add', 'Uet_content_leftright/Uet_content_leftright_add', 'ght_add', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:54:04', '0');
+INSERT INTO `site_log` VALUES ('995', '1', '::1', '/Uet_lamgiau/website/Uet_content/Uet_content_add', 'http://localhost/Uet_lamgiau/website/Uet_content_leftright/index2/1', 'Uet_content/Uet_content_add', 'ent_add', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:54:02', '0');
+INSERT INTO `site_log` VALUES ('994', '1', '::1', '/Uet_lamgiau/website/Uet_content_leftright/index2/1', 'http://localhost/Uet_lamgiau/website/Uet_content', 'Uet_content_leftright/index2', '/index2/1', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:53:59', '0');
+INSERT INTO `site_log` VALUES ('993', '1', '::1', '/Uet_lamgiau/website/Uet_content', 'http://localhost/Uet_lamgiau/website/Uet_website', 'Uet_content/index', 't', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:53:56', '0');
+INSERT INTO `site_log` VALUES ('992', '1', '::1', '/Uet_lamgiau/website/Uet_website', '', 'Uet_website/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:53:41', '0');
+INSERT INTO `site_log` VALUES ('991', null, '::1', '/Uet_lamgiau/uetadmin', '', 'defaults/index', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-07 22:53:21', '1');
+INSERT INTO `site_log` VALUES ('990', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite/content', 'http://localhost/Uet_lamgiau/website/Uet_createwebsite', 'Uet_createwebsite/content', 'content', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 23:18:17', '0');
+INSERT INTO `site_log` VALUES ('989', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite', 'http://localhost/Uet_lamgiau/website/Uet_createwebsite/content', 'Uet_createwebsite/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 23:18:06', '0');
+INSERT INTO `site_log` VALUES ('988', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite/content', 'http://localhost/Uet_lamgiau/website/Uet_createwebsite', 'Uet_createwebsite/content', 'content', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 22:58:13', '0');
+INSERT INTO `site_log` VALUES ('987', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite', 'http://localhost/Uet_lamgiau/website/Uet_website', 'Uet_createwebsite/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 22:57:23', '0');
+INSERT INTO `site_log` VALUES ('986', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite/content', 'http://localhost/Uet_lamgiau/website/Uet_createwebsite', 'Uet_createwebsite/content', 'content', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 22:56:46', '0');
+INSERT INTO `site_log` VALUES ('985', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite', 'http://localhost/Uet_lamgiau/website/Uet_website', 'Uet_createwebsite/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 22:56:45', '0');
+INSERT INTO `site_log` VALUES ('983', '1', '::1', '/Uet_lamgiau/uetadmin', '', 'defaults/index', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 22:56:22', '0');
+INSERT INTO `site_log` VALUES ('984', '1', '::1', '/Uet_lamgiau/website/Uet_website', '', 'Uet_website/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 22:56:44', '0');
+INSERT INTO `site_log` VALUES ('982', null, '::1', '/Uet_lamgiau/website/Uet_website', '', 'Uet_website/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 22:56:19', '1');
 INSERT INTO `site_log` VALUES ('981', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite/content', 'http://localhost/Uet_lamgiau/website/Uet_createwebsite', 'Uet_createwebsite/content', 'content', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 09:10:50', '0');
 INSERT INTO `site_log` VALUES ('980', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite', 'http://localhost/Uet_lamgiau/website/Uet_content/AddContentDetail.html', 'Uet_createwebsite/index', 'e', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 09:10:48', '0');
 INSERT INTO `site_log` VALUES ('979', '1', '::1', '/Uet_lamgiau/website/Uet_createwebsite/content', '', 'Uet_createwebsite/content', 'content', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', '0', '2018-06-05 09:02:48', '0');
@@ -2973,7 +3084,7 @@ CREATE TABLE `thong_ke_online` (
   `access_date` int(11) NOT NULL,
   `today` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED;
+) ENGINE=MyISAM AUTO_INCREMENT=75 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED;
 
 -- ----------------------------
 -- Records of thong_ke_online
@@ -3014,7 +3125,8 @@ INSERT INTO `thong_ke_online` VALUES ('69', '1527786000', '125');
 INSERT INTO `thong_ke_online` VALUES ('70', '1527872400', '1');
 INSERT INTO `thong_ke_online` VALUES ('71', '1527958800', '0');
 INSERT INTO `thong_ke_online` VALUES ('72', '1528045200', '1');
-INSERT INTO `thong_ke_online` VALUES ('73', '1528131600', '0');
+INSERT INTO `thong_ke_online` VALUES ('73', '1528131600', '8');
+INSERT INTO `thong_ke_online` VALUES ('74', '1528304400', '0');
 
 -- ----------------------------
 -- Table structure for uet_content
@@ -3033,7 +3145,7 @@ CREATE TABLE `uet_content` (
 -- ----------------------------
 -- Records of uet_content
 -- ----------------------------
-INSERT INTO `uet_content` VALUES ('3', 'Content basic BOTTOM', 'Cấu trúc left-right', '1', '1', '1');
+INSERT INTO `uet_content` VALUES ('3', 'Content', 'Content tổng', '1', '1', '1');
 
 -- ----------------------------
 -- Table structure for uet_content_detail
@@ -3078,15 +3190,37 @@ CREATE TABLE `uet_content_left` (
   `status` int(11) DEFAULT NULL,
   `id_content` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of uet_content_left
 -- ----------------------------
-INSERT INTO `uet_content_left` VALUES ('1', 'Left - Right basic BOTTOM', 'Khối left giống khối Right', '1', '3');
-INSERT INTO `uet_content_left` VALUES ('4', 'Left - Right advance BOTTOM', '', '1', '4');
-INSERT INTO `uet_content_left` VALUES ('5', 'Left - Right basic TOP', '', '1', '6');
-INSERT INTO `uet_content_left` VALUES ('6', 'Left - Right advance TOP', '', '1', '7');
+INSERT INTO `uet_content_left` VALUES ('7', 'LEFT', 'Thư viện Left giống Right', '1', '3');
+
+-- ----------------------------
+-- Table structure for uet_content_left_module
+-- ----------------------------
+DROP TABLE IF EXISTS `uet_content_left_module`;
+CREATE TABLE `uet_content_left_module` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `link_module` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `description` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `id_left` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of uet_content_left_module
+-- ----------------------------
+INSERT INTO `uet_content_left_module` VALUES ('1', 'Danh Mục Sản Phẩm', 'website/Uet_content_leftright/Danhmuc_sanpham/', '', '7');
+INSERT INTO `uet_content_left_module` VALUES ('2', 'Danh Mục Tin Tức', 'website/Uet_content_leftright/Danhmuc_tintuc/', '', '7');
+INSERT INTO `uet_content_left_module` VALUES ('3', 'Danh Mục Hình Ảnh', 'website/Uet_content_leftright/Danhmuc_hinhanh/', '', '7');
+INSERT INTO `uet_content_left_module` VALUES ('4', 'Banner Quảng Cáo', 'website/Uet_content_leftright/Banner_quangcao/', '', '7');
+INSERT INTO `uet_content_left_module` VALUES ('5', 'Sản Phẩm Nổi Bật', 'website/Uet_content_leftright/SanPhamNoiBat/', '', '7');
+INSERT INTO `uet_content_left_module` VALUES ('6', 'Tin Tức Nổi Bật', 'website/Uet_content_leftright/TinTucNoiBat/', '', '7');
+INSERT INTO `uet_content_left_module` VALUES ('7', 'Hỗ Trợ Khách Hàng', 'website/Uet_content_leftright/HoTroKhachHang/', '', '7');
+INSERT INTO `uet_content_left_module` VALUES ('8', 'Thống Kê Truy Cập', 'website/Uet_content_leftright/ThongKeTruyCap/', '', '7');
 
 -- ----------------------------
 -- Table structure for uet_content_mid
@@ -3099,15 +3233,36 @@ CREATE TABLE `uet_content_mid` (
   `status` int(11) DEFAULT NULL,
   `id_content` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of uet_content_mid
 -- ----------------------------
-INSERT INTO `uet_content_mid` VALUES ('1', 'Mid basic BOTTOM', 'Khối trung tâm cho website phổ thông', '1', '3');
-INSERT INTO `uet_content_mid` VALUES ('2', 'Mid advance BOTTOM', 'Khối trung tâm cho website TMĐT', '1', '4');
-INSERT INTO `uet_content_mid` VALUES ('3', 'Mid basic TOP', '', '1', '6');
-INSERT INTO `uet_content_mid` VALUES ('4', 'Mid advance TOP', '', '1', '7');
+INSERT INTO `uet_content_mid` VALUES ('5', 'MID', 'Phần trung tâm của website', '1', '3');
+
+-- ----------------------------
+-- Table structure for uet_content_mid_module
+-- ----------------------------
+DROP TABLE IF EXISTS `uet_content_mid_module`;
+CREATE TABLE `uet_content_mid_module` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `link_module` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `description` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `id_mid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of uet_content_mid_module
+-- ----------------------------
+INSERT INTO `uet_content_mid_module` VALUES ('1', 'Sản Phẩm Theo Danh Mục', 'website/Uet_content_mid/Product_category/', '', '5');
+INSERT INTO `uet_content_mid_module` VALUES ('2', 'Tin Tức Theo Danh Mục', 'website/Uet_content_mid/News_category/', '', '5');
+INSERT INTO `uet_content_mid_module` VALUES ('3', 'Sản Phẩm Nổi Bật', 'website/Uet_content_mid/Product_hot/', '', '5');
+INSERT INTO `uet_content_mid_module` VALUES ('4', 'Tin Tức Nổi Bật', 'website/Uet_content_mid/News_hot/', '', '5');
+INSERT INTO `uet_content_mid_module` VALUES ('5', 'Thư Viện Giới Thiệu', 'website/Uet_content_mid/Library_gioithieu/', '', '5');
+INSERT INTO `uet_content_mid_module` VALUES ('6', 'Thư Viện Đối Tác', 'website/Uet_content_mid/Library_doitac/', '', '5');
+INSERT INTO `uet_content_mid_module` VALUES ('7', 'Ý Kiến Khách Hàng', 'website/Uet_content_mid/Ykien_khachhang/', '', '5');
 
 -- ----------------------------
 -- Table structure for uet_createwebsite
@@ -3121,6 +3276,7 @@ CREATE TABLE `uet_createwebsite` (
   `content` int(11) DEFAULT NULL,
   `create` time DEFAULT NULL,
   `update` time DEFAULT NULL,
+  `process` int(11) DEFAULT NULL COMMENT '1. đang trong quá trình sinh web, 2. đã xuất web',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -3129,10 +3285,10 @@ CREATE TABLE `uet_createwebsite` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for uet_createwebsite_detail
+-- Table structure for uet_createwebsite_content
 -- ----------------------------
-DROP TABLE IF EXISTS `uet_createwebsite_detail`;
-CREATE TABLE `uet_createwebsite_detail` (
+DROP TABLE IF EXISTS `uet_createwebsite_content`;
+CREATE TABLE `uet_createwebsite_content` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_content_detail` int(11) DEFAULT NULL,
   `id_website` int(11) DEFAULT NULL,
@@ -3140,7 +3296,24 @@ CREATE TABLE `uet_createwebsite_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
--- Records of uet_createwebsite_detail
+-- Records of uet_createwebsite_content
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for uet_createwebsite_content_module_detail
+-- ----------------------------
+DROP TABLE IF EXISTS `uet_createwebsite_content_module_detail`;
+CREATE TABLE `uet_createwebsite_content_module_detail` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_module` int(11) DEFAULT NULL,
+  `id_library` int(11) DEFAULT NULL,
+  `id_content_child` int(11) DEFAULT NULL,
+  `location` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of uet_createwebsite_content_module_detail
 -- ----------------------------
 
 -- ----------------------------

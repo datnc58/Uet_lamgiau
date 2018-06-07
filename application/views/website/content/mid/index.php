@@ -6,69 +6,21 @@
 <!-- Main content -->
 <div class="col-md-12">
     <section class="content" style="text-align: center; background: #ffffff; display: inline-block; width: 100%">
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Product_category')."/$id_mid"?>">
-                    <div class="box">
-                        <h4>Sản phẩm theo danh mục</h4>
+        <?php
+            if(isset($content_mid) && !empty($content_mid)){
+                foreach($content_mid as $val){ ?>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <a href="<?=base_url($val->link_module).""?>">
+                                <div class="box">
+                                    <h4><?=$val->name; ?></h4>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/News_category')."/$id_mid"?>">
-                    <div class="box">
-                        <h4>Tin tức theo danh mục</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Product_hot')."/$id_mid"?>">
-                    <div class="box">
-                        <h4>Sản phẩm nổi bật</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/News_hot')."/$id_mid"?>">
-                    <div class="box">
-                        <h4>Tin tức nổi bật</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Library_gioithieu')."/$id_mid"?>">
-                    <div class="box">
-                        <h4>Thư viện giới thiệu</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Library_doitac')."/$id_mid"?>">
-                    <div class="box">
-                        <h4>Thư viện đối tác</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_mid/Ykien_khachhang')."/$id_mid"?>">
-                    <div class="box">
-                        <h4>Ý kiến khách hàng</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <?php   }
+            }
+        ?>
     </section>
 </div>
 <style type="text/css">

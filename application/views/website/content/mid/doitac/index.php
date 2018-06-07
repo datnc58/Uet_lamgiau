@@ -12,7 +12,7 @@
 
     <section class="content" style="text-align: center; background: #ffffff;">
         <div style="margin-bottom: 20px;">
-<!--            <a href="--><?//=base_url('website/Uet_content_mid/Add_library_doitac')."/$id_mid";?><!--" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm thư viện đối tác</a>-->
+            <a href="<?=base_url('website/Uet_content_mid/Add_library_doitac');?>" class="btn btn-primary pull-left" style="border-radius: 0px;">Thêm thư viện đối tác</a>
         </div>
         <div class="clearfix" style="margin-top: 20px !important;"></div>
         <table id="example1" class="table table-striped table-bordered" style="width:100%; margin-top: 20px !important;">
@@ -37,8 +37,8 @@
                                     <td><?= $spdm->url?></td>
                                     <td><?= $spdm->number ?></td>
                                     <td>
-                                        <a href="<?=base_url('website/Uet_content_mid/')."editLibraryGioithieu/$spdm->id/$id_mid"?>" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Sửa</a>
-                                        <a href="<?=base_url('website/Uet_content_mid/')."DeleteLibraryGioithieu/$spdm->id/$id_mid"?>" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Xóa</a>
+                                        <a href="<?=base_url('website/Uet_content_mid/')."editLibraryGioithieu/$spdm->id"?>" class="btn btn-success btn-xs"><i class="fa fa-edit"></i> Sửa</a>
+                                        <a href="<?=base_url('website/Uet_content_mid/')."DeleteLibraryGioithieu/$spdm->id"?>" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Xóa</a>
                                     </td>
                                 </tr>
                             <?php }
