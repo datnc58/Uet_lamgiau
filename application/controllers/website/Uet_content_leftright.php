@@ -11,15 +11,48 @@ class Uet_content_leftright extends MY_Controller
     }
 
     //index
-    public function index2($id_left= NULL)
+    public function index2()
     {
         $data = array();
         $seo = array();
-        $data['id_left'] = $id_left;
+        $data['content_mid'] = $this->f_websitemodel->get_data('uet_content_left_module');
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/left_right/index', $data);
         $this->LoadFooterWebsite();
     }
+
+    public function AddContentModuleLeft($id = null){
+        $data = array();
+        $seo = array();
+        $data['content'] = $this->f_websitemodel->get_data('uet_content_left');
+        $data['mid'] = $this->f_websitemodel->getItemByID('uet_content_mid',$id);
+        $this->LoadHeaderWebsite(null, $seo, true);
+        $this->load->view('website/content/left_right/AddModuleLeft', $data);
+        $this->LoadFooterWebsite();
+    }
+
+    function Add_contentmoduleleft_ajax(){
+        $name = $_POST['name'];
+        $link_moduel = $_POST['link_module'];
+        $description = $_POST['description'];
+        $id_mid = $_POST['id_mid'];
+        $id_module = $_POST['id_module'];
+        $data = array(
+            'name' => $name,
+            'link_module' => $link_moduel,
+            'description' => $description,
+            'id_left' => $id_mid,
+        );
+        if($id_module){
+            $this->f_websitemodel->Update_where('uet_content_left_module'," id = '".$id_module."', $data");
+            echo 1;
+        }else{
+            $this->f_websitemodel->Add('uet_content_left_module', $data);
+            echo 1;
+        }
+    }
+
+
 
     public function AddContentLeft($id = null){
         $data = array();
@@ -60,12 +93,10 @@ class Uet_content_leftright extends MY_Controller
     }
 
     //Sản phẩm theo danh mục
-    function Danhmuc_sanpham($id = NULL){
+    function Danhmuc_sanpham(){
         $data = array();
         $seo = array();
-        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_left_cateproduct', array(
-            'id_left' => $id
-        ));
+        $data['danhmuc_sanpham'] = $this->f_websitemodel->get_data('uet_left_cateproduct');
         $this->LoadHeaderWebsite(null, $seo, true);
         $this->load->view('website/content/left_right/danhmuc_sanpham/index', $data);
         $this->LoadFooterWebsite();

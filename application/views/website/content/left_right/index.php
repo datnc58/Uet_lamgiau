@@ -6,78 +6,21 @@
 <!-- Main content -->
 <div class="col-md-12">
     <section class="content" style="text-align: center; background: #ffffff; display: inline-block; width: 100%">
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_sanpham/').$id_left?>">
+        <?php
+        if(isset($content_mid) && !empty($content_mid)){
+            foreach($content_mid as $val){ ?>
+                <div class="col-md-3">
                     <div class="box">
-                        <h4>Danh mục sản phẩm</h4>
+                        <a href="<?=base_url($val->link_module).""?>">
+                            <div class="box">
+                                <h4><?=$val->name; ?></h4>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_tintuc/').$id_left?>">
-                    <div class="box">
-                        <h4>Danh mục tin tức</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Danhmuc_hinhanh/').$id_left?>">
-                    <div class="box">
-                        <h4>Danh mục hình ảnh</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/Banner_quangcao/').$id_left?>">
-                    <div class="box">
-                        <h4>Banner quảng cáo</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/SanPhamNoiBat/').$id_left?>">
-                    <div class="box">
-                        <h4>Sản phẩm nổi bật</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/TinTucNoiBat/').$id_left?>">
-                    <div class="box">
-                        <h4>Tin tức nổi bật</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/HoTroKhachHang/').$id_left?>">
-                    <div class="box">
-                        <h4>Hỗ trợ khách hàng</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="box">
-                <a href="<?=base_url('website/Uet_content_leftright/ThongKeTruyCap/').$id_left?>">
-                    <div class="box">
-                        <h4>Thống kê truy cập</h4>
-                    </div>
-                </a>
-            </div>
-        </div>
+                </div>
+            <?php   }
+        }
+        ?>
     </section>
 </div>
 <style type="text/css">
