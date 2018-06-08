@@ -13,7 +13,7 @@
                     <h4 style="padding-top: 60px">Header</h4>
                 </div>
             </a>
-            <a href="<?=base_url('website/Uet_createwebsite/content')?>">
+            <a id="content" onclick="select_content(<?=$website[0]->header;?>,<?=$website[0]->footer;?>)">
                 <div class="mid" style="height: 500px !important;">
                     <h4 style="padding-top: 220px">Content</h4>
                 </div>
@@ -26,6 +26,23 @@
         </div>
     </section>
 </div>
+
+<script type="text/javascript">
+    function select_content(header, footer){
+        if(header == '0'){
+            alert("Bạn cần thao tác chọn Header cho website trước !");
+            return false;
+        }else{
+            if(footer == '0'){
+                alert("Bạn cần thao tác chọn Footer cho website trước !");
+                return false;
+            }else{
+                window.location.href = '<?=base_url('website/Uet_createwebsite/content')?>';
+            }
+        }
+    }
+</script>
+
 <style type="text/css">
     thead {
         background: #f8f8f8;
@@ -68,6 +85,3 @@
 
 </style>
 <!-- /.content -->
-<script type= 'text/javascript' src="<?php echo base_url(); ?>assets/js/thongketruycap/exporting.js"></script>
-<script type= 'text/javascript' src="<?php echo base_url(); ?>assets/js/thongketruycap/highcharts.js"></script>
-<script type= 'text/javascript' src="<?php echo base_url(); ?>assets/js/thongketruycap/jquery.tsv-0.96.min.js"></script>

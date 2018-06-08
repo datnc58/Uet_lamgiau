@@ -6,30 +6,36 @@
 <!-- Main content -->
 <div class="col-md-12">
     <section class="content" style="text-align: center; background: #ffffff; width: 100%; display: inline-block; padding: 30px 0px;">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-xs-5 ">
-                    <select name="from[]" id="multiselect1" class="form-control" size="8" multiple="multiple">
-                        <?php
-                            if(isset($content_detail) && !empty($content_detail)){
-                                foreach($content_detail as $content){ ?>
-                                    <option value="<?=$content->id; ?>" style="background-image:url(<?=base_url('assets/library/content/'.$content->url)?>); background-size: 100% 100%"></option>
-                        <?php   }
-                            }
-                        ?>
-                    </select>
-                </div>
+        <form action="" method="post" class="navbar-form" style="width: 100%">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-5 ">
+                        <select name="from[]" id="multiselect1" class="form-control" size="8" multiple="multiple">
+                            <?php
+                                if(isset($content_detail) && !empty($content_detail)){
+                                    foreach($content_detail as $content){ ?>
+                                        <option value="<?=$content->id; ?>" style="background-image:url(<?=base_url('assets/library/content/'.$content->url)?>); background-size: 100% 100%"></option>
+                            <?php   }
+                                }
+                            ?>
+                        </select>
+                    </div>
 
-                <div class="col-xs-2" style="text-align: center; padding-top: 240px;">
-                    <button type="button" id="multiselect1_rightSelected" class="button_to"><i class="glyphicon glyphicon-chevron-right"></i></button>
-                    <button type="button" id="multiselect1_leftSelected" class="button_to"><i class="glyphicon glyphicon-chevron-left"></i></button>
-                </div>
+                    <div class="col-xs-2" style="text-align: center; padding-top: 240px;">
+                        <button type="button" id="multiselect1_rightSelected" class="button_to"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                        <button type="button" id="multiselect1_leftSelected" class="button_to"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                    </div>
 
-                <div class="col-xs-5 ">
-                    <select name="to[]" id="multiselect1_to" class="form-control" size="8" multiple="multiple"></select>
+                    <div class="col-xs-5 ">
+                        <select name="content_detail[]" id="multiselect1_to" class="form-control" size="8" multiple="multiple"></select>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12" style="margin-top: 40px;">
+                    <input type="submit" name="hoanthanh" class="btn btn-primary" style="border-radius: 0px;" value="Hoàn thành"/>
                 </div>
             </div>
-        </div>
+        </form>
     </section>
 </div>
 <!--
