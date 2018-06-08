@@ -78,4 +78,15 @@ class F_websitemodel extends MY_Model{
 
         return $query->result();
     }
+
+
+    public function getContentWebsite($id){
+        $this->db->select('uet_content_detail.type, uet_content_detail.url,uet_createwebsite_content.id');
+        $this->db->from('uet_content_detail');
+        $this->db->join('uet_createwebsite_content', 'uet_createwebsite_content.id_content_detail = uet_content_detail.id');
+        $this->db->where('uet_createwebsite_content.id_website', $id);
+        $kq = $this->db->get();
+        return $kq->result();
+    }
+
 }
