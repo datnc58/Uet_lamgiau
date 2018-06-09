@@ -95,6 +95,7 @@ class Uet_createwebsite extends MY_Controller{
         $this->LoadFooterWebsite();
     }
 
+    //bước vào chức năng content detail
     public function content_detail(){
         $data = array();
         $seo = array();
@@ -106,18 +107,107 @@ class Uet_createwebsite extends MY_Controller{
         $this->LoadFooterWebsite();
     }
 
+    //hiển thị ra cấu hình content đang setup
     public function select_contentdetail(){
         $type = $_POST['type'];
         $id_content = $_POST['id_content'];
+        $data['id_content'] = $id_content;
+        $data['type'] = $type;
+        $data['listLeft'] = $this->f_websitemodel->getListModuleLeft($id_content);
+        $data['listRight'] = $this->f_websitemodel->getListModuleMid($id_content);
         if($type == 1){
-            $this->load->view('website/create_website/content_detail/full.php');
+            $this->load->view('website/create_website/content_detail/full.php',$data);
         }else if($type == 2){
-            $this->load->view('website/create_website/content_detail/left-mid.php');
+            $this->load->view('website/create_website/content_detail/left-mid.php',$data);
         }else if($type == 3){
-            $this->load->view('website/create_website/content_detail/left-mid-right.php');
+            $this->load->view('website/create_website/content_detail/left-mid-right.php',$data);
         }else if($type == 4){
-            $this->load->view('website/create_website/content_detail/mid-right.php');
+            $this->load->view('website/create_website/content_detail/mid-right.php',$data);
         }
+    }
+
+    //hiển thị danh sách tất cả các module được chọn
+    public function add_module(){
+        $type = $_POST['type'];
+        $id_content = $_POST['id_content'];
+        $location = $_POST['location'];
+        $data = array(
+            'id_content_child' => $id_content,
+            'location' => $location,
+            'type' => $type,
+        );
+        if($location == 'left'){
+            $table1 = 'uet_content_left_module';
+        }else if($location == 'mid'){
+            $table1 = 'uet_content_mid_module';
+        }else if($location == 'right'){
+            $table1 = 'uet_content_left_module';
+        }
+        if($type == 1){
+            $data['content_detail'] = $this->f_websitemodel->get_data($table1);
+            $this->load->view('website/create_website/show_module/library.php',$data);
+        }else if($type == 2){
+            $data['content_detail'] = $this->f_websitemodel->get_data($table1);
+            $this->load->view('website/create_website/show_module/library.php',$data);
+        }else if($type == 3) {
+            $data['content_detail'] = $this->f_websitemodel->get_data($table1);
+            $this->load->view('website/create_website/show_module/library.php',$data);
+        }else if($type == 4) {
+            $data['content_detail'] = $this->f_websitemodel->get_data($table1);
+            $this->load->view('website/create_website/show_module/library.php',$data);
+        }
+    }
+
+    //thực hiện thêm module trong content
+    public function insert_library(){
+        $insert = $_POST['multiselect1'];
+        foreach($insert as $val){
+            $data_insert = array(
+                'id_module' => $val,
+                'id_content_child' => $_POST['id_content_child'],
+                'location' => $_POST['location'],
+            );
+            $this->f_websitemodel->Add('uet_createwebsite_content_module_detail',$data_insert);
+        }
+    }
+
+    //lấy tất cả item trong thư viện
+    public function select_library_item(){
+        $id_content_module_detail = $_POST['id_content_module_detail'];
+        $id_module = $_POST['id_module'];
+
+
+        $check = $this->f_websitemodel->getFirstRowWhere('uet_createwebsite_content_module_detail', array('id' => $id_content_module_detail));
+        if($check->location == 'mid'){
+            $table = 'uet_content_mid_module';
+        }else if($check->location == 'left'){
+            $table = 'uet_content_left_module';
+        }else if($check->location == 'right'){
+            $table = 'uet_content_left_module';
+        }
+        $tableLibrary = $this->f_websitemodel->getFirstRowWhere($table, array('id' => $check->id_module));
+
+        $data['listItem'] = $this->f_websitemodel->get_data($tableLibrary->table);
+        $data['id_content_module_detail'] = $id_content_module_detail;
+        $data['id_module'] = $id_module;
+        $this->load->view('website/create_website/show_item/item.php',$data);
+    }
+
+    //function sinh web
+    public function copyCodeWidget(){
+        $id_library = $_POST['id_library'];
+        $id_content_module_detail = $_POST['id_content_module_detail'];
+        $id_module = $_POST['id_module'];
+        $check = $this->f_websitemodel->getFirstRowWhere('uet_createwebsite_content_module_detail', array('id' => $id_module));
+        //thực hiện update csdl
+        if(isset($check->id_library) && !empty($check->id_library)){
+            //thực hiệp update
+            $data = array(
+                'id_library' => $id_library
+            );
+            $this->f_websitemodel->Update_where('uet_createwebsite_content_module_detail',array('id' => $id_content_module_detail), $data);
+        }
+        //thực hiệp copy code vào widget
     }
 
 }
