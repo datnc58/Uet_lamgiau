@@ -89,4 +89,21 @@ class F_websitemodel extends MY_Model{
         return $kq->result();
     }
 
+    public function getListModuleLeft($id){
+        $this->db->select('uet_content_left_module.name,uet_createwebsite_content_module_detail.id, uet_content_left_module.table,uet_createwebsite_content_module_detail.location,uet_createwebsite_content_module_detail.id_library,uet_createwebsite_content_module_detail.id_module');
+        $this->db->from('uet_content_left_module');
+        $this->db->join('uet_createwebsite_content_module_detail', 'uet_createwebsite_content_module_detail.id_module = uet_content_left_module.id');
+        $this->db->where('uet_createwebsite_content_module_detail.id_content_child', $id);
+        $kq = $this->db->get();
+        return $kq->result();
+    }
+    public function getListModuleMid($id){
+        $this->db->select('uet_content_mid_module.name,uet_createwebsite_content_module_detail.id, uet_content_mid_module.table,uet_createwebsite_content_module_detail.location,uet_createwebsite_content_module_detail.id_library,uet_createwebsite_content_module_detail.id_module');
+        $this->db->from('uet_content_mid_module');
+        $this->db->join('uet_createwebsite_content_module_detail', 'uet_createwebsite_content_module_detail.id_module = uet_content_mid_module.id');
+        $this->db->where('uet_createwebsite_content_module_detail.id_content_child', $id);
+        $kq = $this->db->get();
+        return $kq->result();
+    }
+
 }
