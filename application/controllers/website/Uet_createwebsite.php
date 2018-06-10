@@ -112,16 +112,22 @@ class Uet_createwebsite extends MY_Controller{
         $type = $_POST['type'];
         $id_content = $_POST['id_content'];
         $data['id_content'] = $id_content;
-        $data['type'] = $type;
-        $data['listLeft'] = $this->f_websitemodel->getListModuleLeft($id_content);
-        $data['listRight'] = $this->f_websitemodel->getListModuleMid($id_content);
+
         if($type == 1){
+            $data['listRight'] = $this->f_websitemodel->getListModuleMid($id_content, 'mid');
             $this->load->view('website/create_website/content_detail/full.php',$data);
         }else if($type == 2){
+            $data['listLeft'] = $this->f_websitemodel->getListModuleLeft($id_content,'left');
+            $data['listRight'] = $this->f_websitemodel->getListModuleMid($id_content, 'mid');
             $this->load->view('website/create_website/content_detail/left-mid.php',$data);
         }else if($type == 3){
+            $data['listLeft'] = $this->f_websitemodel->getListModuleLeft($id_content,'left');
+            $data['listMid'] = $this->f_websitemodel->getListModuleMid($id_content, 'mid');
+            $data['listRight'] = $this->f_websitemodel->getListModuleLeft($id_content, 'right');
             $this->load->view('website/create_website/content_detail/left-mid-right.php',$data);
         }else if($type == 4){
+            $data['listMid'] = $this->f_websitemodel->getListModuleMid($id_content, 'mid');
+            $data['listRight'] = $this->f_websitemodel->getListModuleMid($id_content, 'right');
             $this->load->view('website/create_website/content_detail/mid-right.php',$data);
         }
     }
