@@ -54,12 +54,7 @@
         });
     }
 
-    function hidden_module(){
-        var id_content_child = $('#id_content_child').val();
-        var type = $('#type').val();
-        $('#show_moduel').modal('hide');
-        select_contentdetail(id_content_child, type);
-    }
+
 
 </script>
 <!-- phân loại left -right -->
@@ -98,7 +93,7 @@
         <div class="modal-dialog modal-lg" role="document" style="width: 100%; text-align: center ">
             <div class="modal-content" style="width: 80%; margin: 0 auto;">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="hidden_module()"></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="hidden_module()"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body" style="display: inline-block; width: 100%;;" id="show_item_list">
 

@@ -51,7 +51,12 @@
             }
         });
     }
-
+    function hidden_module(){
+        var id_content_child = $('#id_content_child').val();
+        var type = $('#type').val();
+        $('#show_moduel').modal('hide');
+        select_contentdetail(id_content_child, type);
+    }
 
 
 </script>

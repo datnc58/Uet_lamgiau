@@ -3,7 +3,7 @@
         if(isset($listLeft) && !empty($listLeft)){
             foreach($listLeft as $li){
                 if($li->location == 'left'){ ?>
-                    <div class="list">
+                    <div class="list" onclick="select_library_item(<?=$li->id;?>,<?=$li->id_module;?>)" >
                         <a><?=$li->name;?></a>
                     </div>
                 <?php } }
@@ -22,7 +22,7 @@
     if(isset($listRight) && !empty($listRight)){
         foreach($listRight as $li){
             if($li->location == 'mid'){ ?>
-                <div class="list">
+                <div class="list" onclick="select_library_item(<?=$li->id;?>,<?=$li->id_module;?>)" >
                     <a><?=$li->name;?></a>
                 </div>
     <?php   }
@@ -35,7 +35,21 @@
         </a>
     <?php } ?>
 </div>
+<script type="text/javascript">
 
+    function select_library_item(id_content_module_detail, id_module){
+        $('#show_item').modal('show');
+        $.ajax({
+            url: base_url() + 'website/Uet_createwebsite/select_library_item',
+            type: "POST",
+            data: {id_content_module_detail: id_content_module_detail,id_module: id_module},
+            success: function (res) {
+                $('#show_item_list').html(res);
+            }
+        });
+    }
+
+</script>
 <style type="text/css">
 
     .list {
