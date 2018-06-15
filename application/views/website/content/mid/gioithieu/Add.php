@@ -30,6 +30,15 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75); padding: 20px 0px;">
                     <div class="clearfix"></div>
                     <div class="form-group" style="width: 100%; margin-top: 20px;">
                         <div class="col-md-4">
+                            <label for="" style="margin-top: 7px;" class="pull-right">widgets</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="widgets" name="widgets" style="width: 100%; border-radius: 0px"/>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group" style="width: 100%; margin-top: 20px;">
+                        <div class="col-md-4">
                             <label for="" style="margin-top: 7px;" class="pull-right">Loại mid</label>
                         </div>
                         <div class="col-md-8">

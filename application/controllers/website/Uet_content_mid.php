@@ -125,6 +125,7 @@ class Uet_content_mid extends MY_Controller
                         'status' => 1,
                         'id_mid' => $val,
                         'number' => $library,
+                        'widgets' => $_POST['widgets'],
                         'url' => $pathImage,
                     );
                     $this->f_websitemodel->Add('uet_mid_introduce', $insert);
@@ -252,7 +253,7 @@ class Uet_content_mid extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_mid_introduce',$id,$update);
             redirect(base_url('website/Uet_content_mid/Add_library_gioithieu'));
@@ -305,6 +306,7 @@ class Uet_content_mid extends MY_Controller
                         'status' => 1,
                         'id_mid' => $val,
                         'number' => $library,
+                        'widgets' => $_POST['widgets'],
                         'url' => $pathImage,
                     );
                     $this->f_websitemodel->Add('uet_mid_partner', $insert);
@@ -432,7 +434,7 @@ class Uet_content_mid extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_mid_partner',$id,$update);
             redirect(base_url('website/Uet_content_mid/Add_library_doitac'));
@@ -486,6 +488,7 @@ class Uet_content_mid extends MY_Controller
                         'id_mid' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_mid_customer', $insert);
                 }
@@ -612,7 +615,7 @@ class Uet_content_mid extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_mid_customer',$id,$update);
             redirect(base_url('website/Uet_content_mid/Add_ykien_khachhang'));
@@ -665,6 +668,7 @@ class Uet_content_mid extends MY_Controller
                         'id_mid' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_mid_productcate', $insert);
                 }
@@ -790,7 +794,7 @@ class Uet_content_mid extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_mid_productcate',$id,$update);
             redirect(base_url('website/Uet_content_mid/Add_Product_category'));
@@ -843,6 +847,7 @@ class Uet_content_mid extends MY_Controller
                         'id_mid' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_mid_newscate', $insert);
                 }
@@ -968,7 +973,7 @@ class Uet_content_mid extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_mid_newscate',$id,$update);
             redirect(base_url('website/Uet_content_mid/Add_News_category'));
@@ -1020,6 +1025,7 @@ class Uet_content_mid extends MY_Controller
                         'id_mid' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_mid_producthot', $insert);
                 }
@@ -1145,7 +1151,7 @@ class Uet_content_mid extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_mid_producthot',$id,$update);
             redirect(base_url('website/Uet_content_mid/Add_Product_hot'));
@@ -1197,6 +1203,7 @@ class Uet_content_mid extends MY_Controller
                         'id_mid' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_mid_newshot', $insert);
                 }
@@ -1322,7 +1329,7 @@ class Uet_content_mid extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_mid_newshot',$id,$update);
             redirect(base_url('website/Uet_content_mid/Add_News_hot'));
