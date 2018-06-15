@@ -126,6 +126,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_cateproduct', $insert);
                 }
@@ -252,7 +253,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_header',$id,$update);
             redirect(base_url('website/Uet_content_leftright/Add_danhmuc_sanpham'));
@@ -304,6 +305,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_catenews', $insert);
                 }
@@ -430,7 +432,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_left_catenews',$id,$update);
             redirect(base_url('website/Uet_content_leftright/Add_danhmuc_tintuc'));
@@ -483,6 +485,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_media', $insert);
                 }
@@ -609,7 +612,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_left_media',$id,$update);
             redirect(base_url('website/Uet_content_leftright/Add_danhmuc_hinhanh'));
@@ -663,6 +666,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_advertise', $insert);
                 }
@@ -789,7 +793,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_left_advertise',$id,$update);
             redirect(base_url('website/Uet_content_leftright/Add_banner_quangcao'));
@@ -842,6 +846,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_hotproduct', $insert);
                 }
@@ -968,7 +973,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_left_hotproduct',$id,$update);
             redirect(base_url('website/Uet_content_leftright/AddSanPhamNoiBat'));
@@ -1022,6 +1027,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_hotnews', $insert);
                 }
@@ -1148,7 +1154,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_left_hotnews',$id,$update);
             redirect(base_url('website/Uet_content_leftright/AddTinTucNoiBat'));
@@ -1202,6 +1208,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_support', $insert);
                 }
@@ -1328,7 +1335,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_left_support',$id,$update);
             redirect(base_url('website/Uet_content_leftright/AddHoTroKhachHang'));
@@ -1381,6 +1388,7 @@ class Uet_content_leftright extends MY_Controller
                         'id_left' => $val,
                         'number' => $library,
                         'url' => $pathImage,
+                        'widgets' => $_POST['widgets'],
                     );
                     $this->f_websitemodel->Add('uet_left_counter', $insert);
                 }
@@ -1507,7 +1515,7 @@ class Uet_content_leftright extends MY_Controller
             $update = array(
                 'name' => $_POST['name'],
                 'infor' => $_POST['infor'],
-
+                'widgets' => $_POST['widgets'],
             );
             $this->f_websitemodel->Update('uet_left_counter',$id,$update);
             redirect(base_url('website/Uet_content_leftright/AddthongkeTruyCap'));
